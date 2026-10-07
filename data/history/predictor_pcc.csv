@@ -1,0 +1,9 @@
+species,condition,test_pcc,source_id,status
+Ara,UP,0.753,E06,index_summary_not_raw_verified
+Ara,DOWN,0.6948,E06,index_summary_not_raw_verified
+Benthamiana,UP,0.7722,E06,index_summary_not_raw_verified
+Benthamiana,DOWN,0.6055,E06,index_summary_not_raw_verified
+Maize,UP,0.488,E06,index_summary_not_raw_verified
+Maize,DOWN,0.7434,E06,index_summary_not_raw_verified
+Tomato,UP,0.7053,E06,index_summary_not_raw_verified
+Tomato,DOWN,0.8073,E06,index_summary_not_raw_verified

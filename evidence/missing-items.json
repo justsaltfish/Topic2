@@ -1,0 +1,225 @@
+[
+  {
+    "id": "M01",
+    "description": "最终训练数据、物种、筛选条件和样本数",
+    "sources": [
+      "E01",
+      "E02"
+    ],
+    "status": "unresolved"
+  },
+  {
+    "id": "M02",
+    "description": "最终 DDPM 架构、权重、代码版本和采样配置",
+    "sources": [
+      "E01",
+      "E02",
+      "E03"
+    ],
+    "status": "unresolved"
+  },
+  {
+    "id": "M03",
+    "description": "生成数量、种子和独立重复数",
+    "sources": [
+      "E03"
+    ],
+    "status": "unresolved"
+  },
+  {
+    "id": "M04",
+    "description": "划分规则、真实参照集及其独立性",
+    "sources": [
+      "E02"
+    ],
+    "status": "unresolved"
+  },
+  {
+    "id": "M05",
+    "description": "GC 分布统计与差异",
+    "sources": [
+      "E08"
+    ],
+    "status": "unresolved"
+  },
+  {
+    "id": "M06",
+    "description": "k 值、计数定义和 k-mer 统计",
+    "sources": [
+      "E09"
+    ],
+    "status": "unresolved"
+  },
+  {
+    "id": "M07",
+    "description": "motif 数据库、FIMO 设置和分布距离定义与结果",
+    "sources": [
+      "E09"
+    ],
+    "status": "unresolved"
+  },
+  {
+    "id": "M08",
+    "description": "相似度算法、参照、去近重复及统计",
+    "sources": [
+      "E08",
+      "E09"
+    ],
+    "status": "unresolved"
+  },
+  {
+    "id": "M09",
+    "description": "同聚物、重复和复杂度定义、比例、过滤保留率",
+    "sources": [
+      "E08"
+    ],
+    "status": "unresolved"
+  },
+  {
+    "id": "M10",
+    "description": "预测器、UP/DOWN 条件、分数尺度和独立测试结果",
+    "sources": [
+      "E06"
+    ],
+    "status": "unresolved"
+  },
+  {
+    "id": "M11",
+    "description": "指导 / 评价模型关系及独立验证",
+    "sources": [
+      "E06",
+      "E07"
+    ],
+    "status": "unresolved"
+  },
+  {
+    "id": "M12",
+    "description": "各模式共同采样配置及是否配对",
+    "sources": [
+      "E04",
+      "E07"
+    ],
+    "status": "unresolved"
+  },
+  {
+    "id": "M13",
+    "description": "各模式逐序列预测与汇总",
+    "sources": [
+      "E04",
+      "E07"
+    ],
+    "status": "unresolved"
+  },
+  {
+    "id": "M14",
+    "description": "独立重复、统计层级、区间、检验与效应量",
+    "sources": [
+      "E03",
+      "E04"
+    ],
+    "status": "unresolved"
+  },
+  {
+    "id": "M15",
+    "description": "最终阈值来源、数值、单位和比较符号",
+    "sources": [
+      "E04",
+      "E05"
+    ],
+    "status": "unresolved"
+  },
+  {
+    "id": "M16",
+    "description": "最终达标数量、分母、比例与区间",
+    "sources": [
+      "E04",
+      "E05"
+    ],
+    "status": "unresolved"
+  },
+  {
+    "id": "M17",
+    "description": "相同协议下的引导强度 / checkpoint 扫描",
+    "sources": [
+      "E03",
+      "E04",
+      "E07"
+    ],
+    "status": "unresolved"
+  },
+  {
+    "id": "M18",
+    "description": "最终配置选择规则、主指标与质量门槛",
+    "sources": [
+      "E03",
+      "E04",
+      "E08"
+    ],
+    "status": "unresolved"
+  },
+  {
+    "id": "M19",
+    "description": "引导前后质量、过滤保留率及分母",
+    "sources": [
+      "E07",
+      "E08"
+    ],
+    "status": "unresolved"
+  },
+  {
+    "id": "M20",
+    "description": "编码、输入维度、碱基处理和解码",
+    "sources": [
+      "E02"
+    ],
+    "status": "unresolved"
+  },
+  {
+    "id": "M21",
+    "description": "最终噪声过程、训练目标和调度",
+    "sources": [
+      "E02",
+      "E11"
+    ],
+    "status": "unresolved"
+  },
+  {
+    "id": "M22",
+    "description": "引导公式、目标、梯度更新和时间调度",
+    "sources": [
+      "E07",
+      "E12"
+    ],
+    "status": "unresolved"
+  },
+  {
+    "id": "M23",
+    "description": "软件、硬件、代码 / 数据 / 产物哈希及日志",
+    "sources": [
+      "E02",
+      "E03"
+    ],
+    "status": "unresolved"
+  },
+  {
+    "id": "M24",
+    "description": "Figure 1 真实数据、图件和图注元数据",
+    "sources": [
+      "E02",
+      "E08",
+      "E09"
+    ],
+    "status": "unresolved"
+  },
+  {
+    "id": "M25",
+    "description": "Figure 2 真实数据、图件和图注元数据",
+    "sources": [
+      "E04",
+      "E05",
+      "E06",
+      "E07"
+    ],
+    "status": "unresolved"
+  }
+]

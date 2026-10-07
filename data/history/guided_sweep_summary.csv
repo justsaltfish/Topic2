@@ -1,0 +1,4 @@
+history_task,mode,threshold_label,epoch,pass_count,sample_count,source_id,status
+2026-08-04 maize_guided_epoch_sweep,BOTH,old_35S_subset_max,1300,246,500,E04,index_summary_not_raw_verified
+2026-08-04 maize_guided_epoch_sweep,BOTH,credible_relaxed,1500,371,500,E04,index_summary_not_raw_verified
+2026-08-04 maize_guided_epoch_sweep,BOTH,credible_strict,1500,359,500,E04,index_summary_not_raw_verified

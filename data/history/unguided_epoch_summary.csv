@@ -1,0 +1,6 @@
+history_task,criterion,best_epoch,generated_per_checkpoint,checkpoints_evaluated,source_id,status
+2026-07-24 epoch_sweep,UP_max,1900,9000,40,E03,index_summary_not_raw_verified
+2026-07-24 epoch_sweep,BOTH_max_sum,1900,9000,40,E03,index_summary_not_raw_verified
+2026-07-24 epoch_sweep,UP_mean,1850,9000,40,E03,index_summary_not_raw_verified
+2026-07-24 epoch_sweep,DOWN_max,2000,9000,40,E03,index_summary_not_raw_verified
+2026-07-24 epoch_sweep,DOWN_mean,1650,9000,40,E03,index_summary_not_raw_verified

@@ -1,0 +1,33 @@
+{
+  "package_status": "working_draft_not_submission_ready",
+  "raw_results_verified": false,
+  "final_figures_verified": false,
+  "final_dataset_confirmed": false,
+  "final_checkpoint_confirmed": false,
+  "final_threshold_confirmed": false,
+  "missing_items": "evidence/missing-items.json",
+  "history_files": [
+    {
+      "path": "data/history/guided_sweep_summary.csv",
+      "sha256": "2e9d9cee03db49a5eddfb36edc84607052177e61ae4a8203991ca0660504e300",
+      "status": "index_summary_not_raw_verified"
+    },
+    {
+      "path": "data/history/predictor_pcc.csv",
+      "sha256": "7698b0e985836138d5e677ec949526174d4368f774d59ebe036e4a2e85bdbc31",
+      "status": "index_summary_not_raw_verified"
+    },
+    {
+      "path": "data/history/threshold_review.csv",
+      "sha256": "54f0125fb1fc46350541d7ab124b7f74242fdf6d956efc81986b207ff5ef40d6",
+      "status": "index_summary_not_raw_verified"
+    },
+    {
+      "path": "data/history/unguided_epoch_summary.csv",
+      "sha256": "36577bce4828555e16a1f3e47941be17f7adaef64e3c6e621b2411aedd4dff90",
+      "status": "index_summary_not_raw_verified"
+    }
+  ],
+  "final_result_files": [],
+  "figure_outputs": []
+}
