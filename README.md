@@ -30,4 +30,4 @@ python3 scripts/validate_package.py
 python3 scripts/validate_package.py --submission
 ```
 
-默认验证检查工作稿一致性；`--submission` 会在缺口、真实数据或最终图件尚未补齐时失败。Word 使用 A4、常见中英文字体、连续行号和页码；目标期刊尚未指定，不能视为已适配某一家期刊。没有添加未经作者确认的 LICENSE。
+默认验证检查工作稿一致性；`--submission` 会在缺口、真实数据或最终图件尚未补齐时失败。Word 使用 A4、宋体正文、黑体黑色标题、Times New Roman 英文、1.5 倍行距、首行缩进和页码，不显示行号；目标期刊尚未指定，不能视为已适配某一家期刊。没有添加未经作者确认的 LICENSE。
