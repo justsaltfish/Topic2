@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-07",
+  "new_source_files": 32,
+  "shap61_identical_to_sweep_reference_file": true,
+  "shap61_matches_old_both_archive_by_id_sequence_and_scores": 61,
+  "old_both_archive_generator_config": "DDPM-A epoch2000",
+  "july_generator_identity_evidence": "task_record and submission configuration; no original checkpoint hash archived",
+  "october01_generator": "legacy-final epoch2000",
+  "october01_checkpoint_hash_matches_run_manifest": true,
+  "state_tensor_entries_per_checkpoint": 323,
+  "parameter_name_shape_signature_same": true,
+  "three_checkpoint_content_fingerprints_differ": true,
+  "shared_pure_fasta_sha256": "f912f3c8f9dd29ff31874460effdc5e2c6351fa2aa6abdb88227d2f44ffe254e",
+  "pure_query_unique_sequences": 1000,
+  "fasta_archives_exact_match_searched": 123,
+  "fasta_archives_with_positive_matches": 0,
+  "pure_original_generation_provenance": "unresolved; negative exact-match search does not identify origin",
+  "paper_checkpoint_selection": "not confirmed"
+}

@@ -23,3 +23,7 @@
 source_bytes_read：读到原字节并登记哈希；不自动等同结果复算。file_hash_checked：文件存在并哈希核对，不表示模型重新加载。fimo_raw_recounted：现存FIMO明细计数重算。逐样本统计由重分析脚本与公开数据检查支持。训练测试PCC则只达到日志来源核对。
 
 当前哈希不证明历史文件不可变。访问身份、绝对服务器路径、原始DNA/标签及另一篇论文原稿未放入公开仓库。
+
+## E14：后续来源追溯追加
+
+追加32份小型记录与输入正文，以及三份权重的只读状态指纹和123份FASTA精确匹配查询。它们与上面的224份主文核验范围分别登记。结果见[downstream-lineage.md](downstream-lineage.md)及[来源元数据](../data/verified/downstream_lineage_sources.csv)。本次补充没有替作者决定最终权重，也没有将10/1补验性能直接合并进主文。

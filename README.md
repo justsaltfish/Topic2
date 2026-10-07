@@ -43,3 +43,7 @@ python3 scripts/validate_package.py --submission
 若作者拥有本次只读导出的原始 JSON，可按[输入格式说明](evidence/reanalysis-inputs.md)运行 `scripts/reanalyse_archive.py --source-dir <导出目录>`。脚本不连接服务器。图件输出450 DPI PNG与SVG；Word采用黑色黑体标题、宋体正文、Times New Roman英文、1.5倍行距、首行缩进，无行号。
 
 `--submission` 当前会因作者决策、历史版本和缺少部分验证材料而失败。目标期刊、语言、署名及声明尚未确认；本仓库不是完整论文，也没有添加未经作者确认的LICENSE。另一篇论文只用于写作组织方式参考，其原稿及 GAN/3020 bp 数值未上传。
+
+## 后续来源追溯追加
+
+[模型与序列来源追溯](evidence/downstream-lineage.md)确认：SHAP61条来自DDPM-A旧BOTH档；8/4Maize扫描用DDPM-M；10/1补验使用与A/M参数内容都不同的旧版final epoch2000。多物种插入共用1000条背景，但其最初生成来源仍未解决。主文目前报告A/M历史分析，新补验没有自动并入最终模型或主结果。

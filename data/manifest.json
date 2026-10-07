@@ -107,6 +107,18 @@
       "scope": "current_archive_analysis"
     },
     {
+      "path": "data/verified/checkpoint_lineage_fingerprints.csv",
+      "sha256": "3be03c499ae15d20a6df4ec660602e737be8fdd89f3ea8514e5f694240bcb9ae",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "data/verified/downstream_lineage_sources.csv",
+      "sha256": "ce9dac0434fca50064a7b7773cc23b90933cc7af69e55a76157e856fb52b2028",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
       "path": "data/verified/fimo_scan_metadata.csv",
       "sha256": "50b16acbd78188036486d441e839aeb41e56731cdd0e7a96e58d8f9209624a3f",
       "status": "verified",
