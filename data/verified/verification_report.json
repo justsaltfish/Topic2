@@ -1,0 +1,17 @@
+{
+  "source_files_read": 224,
+  "dataset_rows": 11985,
+  "valid_sequences": 11984,
+  "generated_archive_files_checked": 80,
+  "generated_archive_sequences_checked": 720000,
+  "maize_guided_groups_recomputed": 120,
+  "maize_guided_sequences_recomputed": 60000,
+  "ara_method_pairs_recomputed": 500,
+  "july08_current_total_both": 46,
+  "july08_historical_summary_total_both": 602,
+  "july08_archived_filtered_rows": 602,
+  "july08_archived_filtered_unique_sequences": 602,
+  "raw_data_publication": "DNA sequences and label tables not included",
+  "checkpoint_hash_scope": "current files, not proof of historical bytes",
+  "independent_seed_repeats_confirmed": false
+}

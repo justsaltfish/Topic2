@@ -1,11 +1,14 @@
-# 方法与结果对应关系
+# 正文与实际证据对应
 
-| 主张候选 | 方法环节 | 评价 | 图表 | 当前允许表述 | 状态 |
-|---|---|---|---|---|---|
-| DDPM 学习序列分布 | DDPM 训练与无引导采样 | GC、k-mer、motif | Fig. 1B–D、Table S2 | 尚不写方向或优劣结论 | 结果表待取得 |
-| 保留多样性与新颖性 | 解码与去重 | 内部 / 训练集相似度、复杂度 | Fig. 1E–F、Table S2 | 尚不声称新颖性达标 | 原始序列待取得 |
-| 引导改变预测分数 | 预测器及采样更新 | 对照分布、差值、达标率 | Fig. 2B–D、Table S3 | 仅作为待核实结果槽位 | 有历史摘要，无匹配原始表 |
-| 双目标达标 | BOTH 引导及冻结阈值 | 二维分数与双达标率 | Fig. 2C–D | 阈值敏感性有历史记载，最终主结果未定 | 待确认口径 |
-| 活性和质量可兼顾 | 引导后质量筛查 | 全样本与筛选后质量 | Fig. 2E–F、Table S4 | 不预设优化成功 | 完整评价缺失 |
+| 正文 | 支持文件（data/verified） | 核验等级 | 允许结论 |
+|---|---|---|---|
+| R1 P1 数据与训练 | verification_report、generated_file_inventory；训练代码/配置源清单 | 原始读取与结构计数 | 无条件序列生成、两个既有实例 |
+| R1 P2 GC/k-mer | sequence_quality_summary、kmer_correlations、kmer_frequencies | 序列独立重算 | 组成一致性及偏移 |
+| R1 P3 motif | motif_profile_correlations、motif_position_wd、fimo_scan_metadata | 原FIMO重计数 | 类型命中组成与位置分布，不解释为功能验证 |
+| R1 P4 多样性 | sequence_quality_observations、internal_diversity | 序列独立重算 | 内部变化与无精确拷贝，不排除近似拷贝 |
+| R2 P1 预测器 | predictor_test_log_verified、full_dataset_prediction_pcc | 日志/完整数据重算分开 | 测试相关性限制与全数据口径 |
+| R2 P2 Ara方法 | ara_guidance_paired_scores、ara_guidance_methods_recomputed | 逐分数重算 | 单种子、同指导/评分器的预测变化 |
+| R2 P3–4 Maize模式与阈值 | maize_guided_observations、maize_guided_sweep_recomputed | 60000条重算 | 方向模式对比和事后阈值敏感性，不推导无引导增益 |
+| R2 P5 复杂度 | homopolymer_sensitivity、maize_guided_observations | 逐序列重算 | 同聚物代价与探索性筛选，非最终质量验收 |
 
-正文每个缺口引用 evidence/missing-items.md 编号；历史数值仅进入带状态的历史证据表。外部方法论文不提供本课题实验结果。
+每份原始文件的相对路径与SHA在source_manifest.csv。当前文件哈希不是历史文件不变的证明；原始DNA及访问身份不公开。

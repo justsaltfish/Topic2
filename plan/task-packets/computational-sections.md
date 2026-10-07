@@ -30,3 +30,7 @@ README；Results 两节；配套 Methods；图注；合并 Markdown/Word；证�
 ## 验证
 
 运行 scripts/export_docx.py 和 scripts/validate_package.py；按 writing-core 执行风格检查；审查全部新增文件；git diff --check；提交后核对远端 commit。
+
+## 本次用户授权核验追加
+
+读取实际服务器产物，主文以真实结果替代起稿缺口；保持两节计算范围，最终模型/阈值不自动选择。新增实际数据来源、224份正文及文件哈希、原FIMO重计数、公开观察值、两张图、核验后Word和本地副本。参考文献增加JASPAR/FIMO原始论文元数据核对。独立审阅由review_package只读完成，已修正训练集合措辞。

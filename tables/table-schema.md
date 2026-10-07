@@ -1,17 +1,13 @@
-# 补充表字段定义
+# 当前补充表定义
 
-全部模板位于 data/templates/，仅含列名。空值不表示零；尚未确认的数值不得补零。
+S1为真实实验与配置登记：table_s1_study_registry.csv、checkpoint_inventory.csv、predictor_test_log_verified.csv、fimo_scan_metadata.csv。历史文件路径与当前哈希有明确边界，不表示原运行时权重不可变。
 
-| 表格 | 内容 | 数据模板 | 指标与规则 |
-|---|---|---|---|
-| S1 | 数据 / 模型 / 引导配置 | run_metadata.csv | 每个 run 唯一；模型和数据有哈希；注明配对组 |
-| S2 | 无引导序列质量 | quality_summary.csv | 真实参照、全样本数、指标定义和独立重复 |
-| S3 | 引导预测统计 | activity_summary.csv | mode × condition × population；计数和分母完整 |
-| S4 | 过滤前后质量与活性 | quality_summary.csv、activity_summary.csv | population 用 all_generated / quality_pass；报告保留率 |
-| S5 | 参数扫描 | 上述三个汇总模板 | 固定其余条件，阈值相同后比较 |
+S2为真实/无引导质量：sequence_quality_summary、kmer_correlations、motif_profile_correlations、motif_position_wd、internal_diversity。GC SD是序列间变异；Hamming区间是抽样分位数，不是种子重复CI。
 
-sequence_predictions.csv 用于逐序列核对与配对统计；kmer_frequencies.csv 和 motif_hits.csv 提供组成与扫描来源。motif 坐标必须在元数据中冻结为 0-based 半开区间或 1-based 闭区间，不能混用。
+S3为Ara方法比较：ara_guidance_methods_recomputed和500行方法内逐记录配对。五方法共享100条无引导记录，不算500个独立基线。
 
-value 的实际统计含义由 metric_definition 或 metric 说明；均值、标准差、中位数和分位数用独立 metric 行保存。置信区间只在实际计算并记录方法后填写。无独立重复时不能把序列间离散程度当成跨运行误差线。source_file 使用仓库相对路径或登记的公开标识，不嵌入服务器身份。
+S4为Maize模式与阈值：maize_guided_sweep_recomputed和homopolymer_sensitivity。全部500分母与保留分母分开；10/20bp条件是描述性敏感性。
 
-所有最终数据必须关联 run_id 和来源，status=verified 只用于原始产物与分析代码已经核对的记录。历史摘要保持其原始状态。
+S5为完整来源与扫描：generated_file_inventory、ara_ddpm_wd_archive和source_manifest。旧WD表与本次原FIMO重算等级分开。
+
+本轮旧templates字段保持为将来采集模板，不再对应当前S3/S4的实际表定义。对外公开表不含DNA字符串；缺失值为空，不能补零。

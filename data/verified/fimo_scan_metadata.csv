@@ -1,0 +1,5 @@
+source_relative_path,fimo_version,p_value_threshold,scan_both_strands,matrix_pseudocount,background_source,motif_database_file
+topic_new26/topic_enhancer/every_species/Ara/35s/down/wd_equal_real_work/fimo/real/fimo.xml,5.4.1,0.0001,true,0.1,--nrdb--,JASPAR2024_CORE_plants_non-redundant_pfms_meme.txt
+topic_new26/topic_enhancer/every_species/Ara/35s/down/DDPM/v1/jaspar_comparision/500/fimo.xml,5.4.1,0.0001,true,0.1,--nrdb--,JASPAR2024_CORE_plants_non-redundant_pfms_meme.txt
+topic_new26/topic_enhancer/every_species/Ara/35s/down/DDPM/v1/jaspar_comparision/2000/fimo.xml,5.4.1,0.0001,true,0.1,--nrdb--,JASPAR2024_CORE_plants_non-redundant_pfms_meme.txt
+topic_new26/topic_enhancer/every_species/Maize/35s/down/DDPM/v1/jaspar_comparision/2000/fimo.xml,5.4.1,0.0001,true,0.1,--nrdb--,JASPAR2024_CORE_plants_non-redundant_pfms_meme.txt

@@ -1,33 +1,45 @@
 # 160 bp 增强子生成：论文计算部分
 
-本仓库整理 DDPM 增强子生成与预测器引导的计算部分。用户已确认主文只保留两节 Results；对应方法、图注、补充材料和证据追溯一并组织。
+本仓库整理用户已确认的两节 Results：DDPM 生成质量，以及预测器引导的定向生成。两节正文、配套 Methods 和图注已根据现存服务器产物进行核验和重分析。
 
-**当前状态：投稿结构工作稿，尚不能直接投稿。** 原始结果表、最终模型、阈值和图件未取得，所有缺口均显式标记。本仓库没有虚构实验数据或占位结果图。
+**当前状态：已有真实数值与图件的核验稿，最终模型、阈值和投稿要求待作者确认。** 不再使用空白结果槽位；无法恢复的历史信息以限制及待确认项说明，不补造。
 
-## 阅读入口
+## 审阅入口
 
-- [合并工作稿](manuscript/computational_sections_zh.md)：Results → Methods → Figure legends → 方法参考文献。
-- [Word 工作稿](manuscript/computational_sections_zh.docx)：可交给合作者修改；从 Markdown 导出。
-- [Result 1](chapters/01_results_sequence_quality.md)：160 bp 生成质量。
-- [Result 2](chapters/02_results_guided_generation.md)：UP / DOWN / BOTH 定向生成。
-- [Methods](chapters/03_methods_computational.md)：计算方法与评价口径。
-- [证据来源](evidence/source-register.md)与[待核对项](evidence/missing-items.md)。
-- [图件方案](figures/figure-plan.md)、[表格定义](tables/table-schema.md)与[补充材料](supplementary/README.md)。
-- [投稿核对清单](submission/CHECKLIST.md)。
+- [合并中文核验稿](manuscript/computational_sections_zh.md)及 [Word 核验稿](manuscript/computational_sections_zh.docx)，Word 已嵌入两张实际结果图。
+- [结果部分一](results/01_sequence_quality/README.md)：正文、Figure 1、组成与多样性数据。
+- [结果部分二](results/02_guided_generation/README.md)：正文、Figure 2、引导与阈值数据。
+- [对应方法](chapters/03_methods_computational.md)与[补充材料入口](supplementary/README.md)。
+- [核验报告](evidence/verification-report.md)、[来源清单](data/verified/source_manifest.csv)、[未解决项目](evidence/missing-items.md)与[作者决策](evidence/author-decisions.md)。
 
-## 数据状态
+## 本次实际核验
 
-`data/history/` 仅保存课题索引摘要中的历史统计，并明确标注 `index_summary_not_raw_verified`。这些文件不是原始结果，也不能直接作为最终主文图表的数据。`data/templates/` 是只有列名的采集模板，没有模拟或伪造数值。
+读取 224 份代码、配置、日志、序列或预测表。对两个 DDPM 实例的 80 份无引导 FASTA 核对长度和字符，共 720,000 条；对玉米扫描 120 组、60,000 条逐样本记录重算均值、最大值和四套阈值计数；对 Ara DOWN 五种方法各100对重算预测变化。重新计算两组 epoch2000 生成序列与等量真实参照的 GC、k-mer、完全匹配、同聚物与内部 Hamming 分布，并重计数四份已有 FIMO 文件。FIMO XML 的版本和设置一致。
 
-本地另一篇论文仅用于组织方式参考；其 GAN、3020 bp 序列、物种和准确率未进入本课题结果。未连接 SLURM 服务器，未提交作业，未上传原始参考稿或模型权重。
+数值重算不等同新的模型实验。本次没有训练、采样、加载 checkpoint 推理、运行 FIMO、提交作业或写入服务器。现存 checkpoint 的哈希用于识别当前文件，不能证明其历史内容未变化。
 
-## 导出和检查
+## 需要保留的边界
+
+DDPM-A 与 DDPM-M 是两个既有训练实例的标识；两个实例从同一完整序列来源分别划分，未按物种标签过滤或作条件生成。真实质量参照来自模型数据来源，不能当作独立测试集。Ara 引导方法与 Maize checkpoint 扫描分开报告。每组100或500条序列不是多种子重复；指导模型与评分模型相同。
+
+7月8日当前完整预测表与旧摘要不一致。旧筛选档确有602条唯一双达标序列，但不能和当前6000条完整预测表混成同一版本；索引中的601也未得到一致来源。见[版本冲突记录](evidence/conflicts.md)。
+
+Maize e1500 BOTH 的 strict 双达标为359/500，但有373/500条含至少20 bp同聚物；同时双达标且不含此类同聚物仅76条。这是描述性敏感性结果，最终质量门槛仍需确认。
+
+## 文件与复现
+
+`data/verified/` 保存来源哈希、观察值及重算表；不包含原始DNA序列或完整标签表。`data/history/` 保留起稿时的索引摘要，不能覆盖新的逐行核验。`data/templates/` 为未来采集字段，不作为现有结果。
 
 ```bash
-python3 -m pip install -r requirements-docs.txt
+python3 -m pip install -r requirements-analysis.txt
+python3 scripts/check_result_tables.py
+python3 figures/plot_verified_results.py
 python3 scripts/export_docx.py
+python3 scripts/register_artifacts.py
 python3 scripts/validate_package.py
 python3 scripts/validate_package.py --submission
 ```
 
-默认验证检查工作稿一致性；`--submission` 会在缺口、真实数据或最终图件尚未补齐时失败。Word 使用 A4、宋体正文、黑体黑色标题、Times New Roman 英文、1.5 倍行距、首行缩进和页码，不显示行号；目标期刊尚未指定，不能视为已适配某一家期刊。没有添加未经作者确认的 LICENSE。
+若作者拥有本次只读导出的原始 JSON，可按[输入格式说明](evidence/reanalysis-inputs.md)运行 `scripts/reanalyse_archive.py --source-dir <导出目录>`。脚本不连接服务器。图件输出450 DPI PNG与SVG；Word采用黑色黑体标题、宋体正文、Times New Roman英文、1.5倍行距、首行缩进，无行号。
+
+`--submission` 当前会因作者决策、历史版本和缺少部分验证材料而失败。目标期刊、语言、署名及声明尚未确认；本仓库不是完整论文，也没有添加未经作者确认的LICENSE。另一篇论文只用于写作组织方式参考，其原稿及 GAN/3020 bp 数值未上传。

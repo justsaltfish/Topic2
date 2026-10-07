@@ -1,6 +1,6 @@
 {
-  "package_status": "working_draft_not_submission_ready",
-  "raw_results_verified": false,
+  "package_status": "verified_archive_analysis_author_review_pending",
+  "raw_results_verified": true,
   "final_figures_verified": false,
   "final_dataset_confirmed": false,
   "final_checkpoint_confirmed": false,
@@ -28,6 +28,215 @@
       "status": "index_summary_not_raw_verified"
     }
   ],
-  "final_result_files": [],
-  "figure_outputs": []
+  "final_result_files": [
+    {
+      "path": "data/verified/sequence_quality_summary.csv",
+      "sha256": "d324edfd8fd0c84cbca95d7cacf39faf776895d6bcd3f532f2839f9d0cd66159",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "data/verified/ara_guidance_methods_recomputed.csv",
+      "sha256": "3874ccc33038ac3adb66a8f055899215aca8e1f0e03f0aea8f10d010e6e9db69",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "data/verified/maize_guided_sweep_recomputed.csv",
+      "sha256": "dbc8a17411a5a111e16d1e360a38735fe692f9dc7ef83993ea63884f06b8c371",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "data/verified/homopolymer_sensitivity.csv",
+      "sha256": "1fdd92f7009033078f97627fdb856e432ecd186736def5ba3fcb1d4e7c2e8a2c",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    }
+  ],
+  "figure_outputs": [
+    {
+      "path": "figures/results/figure1_sequence_quality.png",
+      "sha256": "0af66b6b3dddef7dac07cba774a7039033bc2d8bc301e022cb0730793b620d59",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "figures/results/figure1_sequence_quality.svg",
+      "sha256": "00aeb4f0abd73f3115e06fba8e6672379740b980d5d762b544bae90eefd92eaf",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "figures/results/figure2_guided_generation.png",
+      "sha256": "920f2058906325455a468a34c7e2a111e32b864c8e712b8491d64bc0a4ad7d54",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "figures/results/figure2_guided_generation.svg",
+      "sha256": "9ef77a596fc6f266b846933982ecf3fe1e94cf202cdea15cd903f32d5472fd4f",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    }
+  ],
+  "archive_figures_verified": true,
+  "analysis_files": [
+    {
+      "path": "data/verified/ara_ddpm_wd_archive.csv",
+      "sha256": "48d807010249b805b2025d687d14e393e63125ef98762fa6011adc1a2e01d76a",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "data/verified/ara_guidance_methods_recomputed.csv",
+      "sha256": "3874ccc33038ac3adb66a8f055899215aca8e1f0e03f0aea8f10d010e6e9db69",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "data/verified/ara_guidance_paired_scores.csv",
+      "sha256": "374eb45d3a22b71756be0636558f43ead5c70e15bec48aa68e024fc92faaff29",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "data/verified/checkpoint_inventory.csv",
+      "sha256": "156196d421cc5331f3a3c15973de65f82ffc20d908c47f887cc49b36a3711277",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "data/verified/fimo_scan_metadata.csv",
+      "sha256": "50b16acbd78188036486d441e839aeb41e56731cdd0e7a96e58d8f9209624a3f",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "data/verified/full_dataset_prediction_pcc.csv",
+      "sha256": "777cf57bd1c23b132d9663f3aed25a797b45e45cf4501990e60904f280a84e76",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "data/verified/gc_histograms.csv",
+      "sha256": "6e19541cd30ea971408ee3aa04efc1a93bdab39a62c87d62630b4fbdcdf83342",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "data/verified/generated_file_inventory.csv",
+      "sha256": "e8cb5dbed8a4358043b0b204a05c465ded58218e461b961325c166255f5481a4",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "data/verified/homopolymer_sensitivity.csv",
+      "sha256": "1fdd92f7009033078f97627fdb856e432ecd186736def5ba3fcb1d4e7c2e8a2c",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "data/verified/internal_diversity.csv",
+      "sha256": "29f8ed6876b60f2ac4126b1c6d5295d8fd4711ab638cec0238f7e6c8633be5ac",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "data/verified/july08_version_conflict.csv",
+      "sha256": "0cfa3f23694a33e9c99931301cb36ccf2d567d39c9341d11d02d535c97fb4d30",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "data/verified/kmer_correlations.csv",
+      "sha256": "9bff196b111ba8f80fd01fe39b514cae48b2a5d2b7bc1990603ffea0b4eac364",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "data/verified/kmer_frequencies.csv",
+      "sha256": "e345dd857ab785119e54e3636a5ac923f075bb5d5ab5bae2024204701be7909d",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "data/verified/maize_guided_observations.csv",
+      "sha256": "b0ea7cfd365ab596e4924198d07de3d71679c5faf7d7dcb57d689745aa5413a5",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "data/verified/maize_guided_sweep_recomputed.csv",
+      "sha256": "dbc8a17411a5a111e16d1e360a38735fe692f9dc7ef83993ea63884f06b8c371",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "data/verified/motif_counts.csv",
+      "sha256": "1f28bfb348846144ebad820d76017199911399a049b319337021ad3944ed4fac",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "data/verified/motif_position_wd.csv",
+      "sha256": "00bb600ceea4af4fb4f876ac793000979fae1839d6f07a5d0df71aa1d6bf87d9",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "data/verified/motif_position_weights.csv",
+      "sha256": "d8a2f8fec34d3ca1bbcbc8d6204391b0a12027258add49497d9244877f6e6d6a",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "data/verified/motif_profile_correlations.csv",
+      "sha256": "6ca8fa63a666315f58a5a635a9682932ed0318c343964d5e0755e6cf3d2777ed",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "data/verified/predictor_test_log_verified.csv",
+      "sha256": "af4e83a55fd604140b384844e7cf680194287db1475626cd109a60eb1dd127bf",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "data/verified/sequence_quality_observations.csv",
+      "sha256": "e04c50e42e3aae1f231a0e48e8a6c969d4463558893200eefd0229b6d74da09e",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "data/verified/sequence_quality_summary.csv",
+      "sha256": "d324edfd8fd0c84cbca95d7cacf39faf776895d6bcd3f532f2839f9d0cd66159",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "data/verified/source_manifest.csv",
+      "sha256": "051b5588fd53374c032ffc618dd70024f7782896ebe729413030563e1de50a63",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "data/verified/verification_report.json",
+      "sha256": "08a539030d60feaf5ed05a01a4b8e99be9f6d591870b36b44cfb31f1b2c0e67b",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "tables/table_s1_study_registry.csv",
+      "sha256": "e92af611a87003c10d66d651c6a5ef87db68536f28d5fdc8183fe6cbc38f09f8",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    }
+  ],
+  "review_docx": {
+    "path": "manuscript/computational_sections_zh.docx",
+    "sha256": "e51192f6836f661da0c133fc04b635083424b0284930611e4c452ce5f165cebe",
+    "status": "verified",
+    "scope": "current_archive_analysis"
+  }
 }

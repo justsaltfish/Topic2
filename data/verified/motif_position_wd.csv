@@ -1,0 +1,5 @@
+group,reference,n_sequences,motif_hits,alt_id_categories,motif_position_wasserstein,unit,pseudocount_per_position
+real_9000,real_9000,9000,346153,703,0.0,bp,1
+Ara_500,real_9000,9000,218250,703,0.22971806401257014,bp,1
+Ara_2000,real_9000,9000,281531,703,0.9850037170799064,bp,1
+Maize_2000,real_9000,9000,279293,703,1.5875476452872546,bp,1

@@ -1,0 +1,4 @@
+mode,current_n,current_up_mean,current_down_mean,current_both_pass,historical_summary_both_pass,status
+up,2000,11.835387173652649,5.907994145154953,2,5,version_conflict_excluded_from_main_claims
+down,2000,7.214583551049232,6.931085233688354,0,0,version_conflict_excluded_from_main_claims
+both,2000,11.754338577270508,6.07817320728302,44,597,version_conflict_excluded_from_main_claims

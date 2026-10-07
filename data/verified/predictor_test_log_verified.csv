@@ -1,0 +1,4 @@
+species,condition,test_loss_log,test_pcc_log,train_n,val_n,test_n,status
+Maize,up,1.2788,0.488,9580,1197,1198,training_log_read_not_test_predictions_recomputed
+Maize,down,0.2103,0.7434,9581,1197,1199,training_log_read_not_test_predictions_recomputed
+Ara,down,0.3895,0.6948,9571,1196,1197,training_log_read_not_test_predictions_recomputed

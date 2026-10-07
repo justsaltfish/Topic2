@@ -1,0 +1,3 @@
+group,reference,motif_id_union_n,hit_count_profile_pcc,basis
+Ara_2000,real_9000,704,0.9607373262882192,union_of_hit_motif_IDs_zero_filled
+Maize_2000,real_9000,704,0.9523597419627956,union_of_hit_motif_IDs_zero_filled

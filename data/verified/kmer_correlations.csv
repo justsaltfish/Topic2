@@ -1,0 +1,9 @@
+group,reference,k,pcc,vocabulary_size,strand_rule,n_per_group
+Ara_directory_epoch2000,real_9000,3,0.9482472736858891,64,forward_only,9000
+Maize_directory_epoch2000,real_9000,3,0.9165552544579701,64,forward_only,9000
+Ara_directory_epoch2000,real_9000,4,0.9460920216943715,256,forward_only,9000
+Maize_directory_epoch2000,real_9000,4,0.909583441058372,256,forward_only,9000
+Ara_directory_epoch2000,real_9000,5,0.9407604328344458,1024,forward_only,9000
+Maize_directory_epoch2000,real_9000,5,0.8963809620241718,1024,forward_only,9000
+Ara_directory_epoch2000,real_9000,6,0.9297236819029465,4096,forward_only,9000
+Maize_directory_epoch2000,real_9000,6,0.8768667965958645,4096,forward_only,9000

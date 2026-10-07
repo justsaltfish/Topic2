@@ -1,0 +1,4 @@
+group,metric,sampled_pairs,pair_sampling_seed,mean,median,q05,q95,independent_runs
+real_9000,aligned_Hamming_identity,100000,42,0.2639526875,0.2625,0.2,0.33125,1
+Ara_directory_epoch2000,aligned_Hamming_identity,100000,42,0.25936987499999997,0.25625,0.2,0.325,1
+Maize_directory_epoch2000,aligned_Hamming_identity,100000,42,0.2726615625,0.26875,0.20625,0.34375,1

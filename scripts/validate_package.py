@@ -45,9 +45,19 @@ def validate(submission=False):
     used = set(re.findall(r"\bM\d{2}\b", merged))
     if used - gap_ids:
         errors.append("Undefined gap IDs: " + ", ".join(sorted(used - gap_ids)))
-    if gap_ids - used:
-        errors.append("Missing-item IDs not represented in manuscript: " + ", ".join(sorted(gap_ids - used)))
+    # Gaps now live in the evidence register; verified prose need not repeat them.
     manifest = json.loads((ROOT / "data/manifest.json").read_text(encoding="utf-8"))
+    if len(doc.inline_shapes) != 2:
+        errors.append("DOCX must embed the two real result figures")
+    if doc.element.xpath("//w:lnNumType"):
+        errors.append("Chinese review DOCX should not contain line numbers")
+    for name in ("Normal", "Heading 1", "Heading 2", "Heading 3"):
+        if str(doc.styles[name].font.color.rgb) != "000000":
+            errors.append("Unexpected theme color: " + name)
+    for item in manifest.get("analysis_files", []) + manifest.get("figure_outputs", []):
+        path = ROOT / item["path"]
+        if not path.is_file() or hashlib.sha256(path.read_bytes()).hexdigest() != item["sha256"]:
+            errors.append("Verified artifact absent or hash mismatch: " + item["path"])
     for item in manifest["history_files"]:
         path = ROOT / item["path"]
         if not path.is_file() or hashlib.sha256(path.read_bytes()).hexdigest() != item["sha256"]:

@@ -6,7 +6,8 @@
       "E01",
       "E02"
     ],
-    "status": "unresolved"
+    "status": "resolved",
+    "verification_outcome": "NG CSV11985条，ACGT唯一11984条；两DDPM实例同一序列源。最终论文数据口径另列作者决策。"
   },
   {
     "id": "M02",
@@ -16,7 +17,8 @@
       "E02",
       "E03"
     ],
-    "status": "unresolved"
+    "status": "resolved",
+    "verification_outcome": "历史实例、使用的epoch及7份当前权重SHA已核对。没有自行确认生产权重。"
   },
   {
     "id": "M03",
@@ -24,7 +26,8 @@
     "sources": [
       "E03"
     ],
-    "status": "unresolved"
+    "status": "resolved",
+    "verification_outcome": "80×9000、120×500和5×100对数量已核对；已说明独立种子重复缺失。"
   },
   {
     "id": "M04",
@@ -32,7 +35,8 @@
     "sources": [
       "E02"
     ],
-    "status": "unresolved"
+    "status": "partial",
+    "verification_outcome": "0.9/0.1代码和真实参照来源已核对；训练划分索引未保存，不能恢复成员或独立性。"
   },
   {
     "id": "M05",
@@ -40,7 +44,8 @@
     "sources": [
       "E08"
     ],
-    "status": "unresolved"
+    "status": "resolved",
+    "verification_outcome": "27000条GC独立重算，均值、SD及直方图已保存。"
   },
   {
     "id": "M06",
@@ -48,7 +53,8 @@
     "sources": [
       "E09"
     ],
-    "status": "unresolved"
+    "status": "resolved",
+    "verification_outcome": "正向k3–6，全4^k词表频率/PCC已重算。"
   },
   {
     "id": "M07",
@@ -56,7 +62,8 @@
     "sources": [
       "E09"
     ],
-    "status": "unresolved"
+    "status": "resolved",
+    "verification_outcome": "FIMO5.4.1四份XML、JASPAR2024文件哈希、双链/阈值/背景均核对；身份PCC与位置WD分别重算。"
   },
   {
     "id": "M08",
@@ -65,7 +72,8 @@
       "E08",
       "E09"
     ],
-    "status": "unresolved"
+    "status": "partial",
+    "verification_outcome": "精确匹配和内部Hamming已完成；训练最近邻、近似拷贝与反向互补未评价。"
   },
   {
     "id": "M09",
@@ -73,7 +81,8 @@
     "sources": [
       "E08"
     ],
-    "status": "unresolved"
+    "status": "resolved",
+    "verification_outcome": "10/20同聚物描述及保留数已重算；它们不替代最终质量门槛。"
   },
   {
     "id": "M10",
@@ -81,7 +90,8 @@
     "sources": [
       "E06"
     ],
-    "status": "unresolved"
+    "status": "partial",
+    "verification_outcome": "预测器代码、配置、测试日志及样本数已读；测试逐样本预测、分数量纲未取得。"
   },
   {
     "id": "M11",
@@ -90,7 +100,8 @@
       "E06",
       "E07"
     ],
-    "status": "unresolved"
+    "status": "resolved",
+    "verification_outcome": "实际使用相同指导与评分器，没有独立评价器；已作为限制写明。"
   },
   {
     "id": "M12",
@@ -99,7 +110,8 @@
       "E04",
       "E07"
     ],
-    "status": "unresolved"
+    "status": "resolved",
+    "verification_outcome": "两轮实验的种子、样本数、模型和配对方式已明确；Maize无匹配无引导对照。"
   },
   {
     "id": "M13",
@@ -108,7 +120,8 @@
       "E04",
       "E07"
     ],
-    "status": "unresolved"
+    "status": "resolved",
+    "verification_outcome": "120组60,000条及Ara方法分数已独立重算。"
   },
   {
     "id": "M14",
@@ -117,7 +130,8 @@
       "E03",
       "E04"
     ],
-    "status": "unresolved"
+    "status": "resolved",
+    "verification_outcome": "只报告描述统计、差值和分位数；无独立重复，不伪造显著性或跨种子区间。"
   },
   {
     "id": "M15",
@@ -126,7 +140,8 @@
       "E04",
       "E05"
     ],
-    "status": "unresolved"
+    "status": "resolved",
+    "verification_outcome": "四套历史阈值及>比较符号已核对；最终论文阈值由作者选定。"
   },
   {
     "id": "M16",
@@ -135,7 +150,8 @@
       "E04",
       "E05"
     ],
-    "status": "unresolved"
+    "status": "resolved",
+    "verification_outcome": "全部计数和全500/保留分母已重算；最高达标数与原始阈值达标分开。"
   },
   {
     "id": "M17",
@@ -145,7 +161,8 @@
       "E04",
       "E07"
     ],
-    "status": "unresolved"
+    "status": "resolved",
+    "verification_outcome": "40epoch扫描与五种方法明细已核对；没有假称完成引导强度扫描。"
   },
   {
     "id": "M18",
@@ -155,7 +172,8 @@
       "E04",
       "E08"
     ],
-    "status": "unresolved"
+    "status": "unresolved",
+    "verification_outcome": "最终模型选择规则、主指标与质量门槛未冻结，不能自行采用某个历史最优。"
   },
   {
     "id": "M19",
@@ -164,7 +182,8 @@
       "E07",
       "E08"
     ],
-    "status": "unresolved"
+    "status": "partial",
+    "verification_outcome": "引导分数、GC、基频熵和同聚物已补算；引导后全套motif/近似相似度验收未齐。"
   },
   {
     "id": "M20",
@@ -172,7 +191,8 @@
     "sources": [
       "E02"
     ],
-    "status": "unresolved"
+    "status": "resolved",
+    "verification_outcome": "ACGT顺序、4×160 one-hot和argmax解码已核对。"
   },
   {
     "id": "M21",
@@ -181,7 +201,8 @@
       "E02",
       "E11"
     ],
-    "status": "unresolved"
+    "status": "resolved",
+    "verification_outcome": "UNet、线性beta1e-4到0.02、1000步、MSE与Adam配置已核对。"
   },
   {
     "id": "M22",
@@ -190,7 +211,8 @@
       "E07",
       "E12"
     ],
-    "status": "unresolved"
+    "status": "resolved",
+    "verification_outcome": "两轮不同梯度公式、缩放和时间窗口已从代码核对，分开报告。"
   },
   {
     "id": "M23",
@@ -199,7 +221,8 @@
       "E02",
       "E03"
     ],
-    "status": "unresolved"
+    "status": "partial",
+    "verification_outcome": "当前权重、数据和产物哈希已登记；历史运行环境和完整不可变快照未恢复。"
   },
   {
     "id": "M24",
@@ -209,7 +232,8 @@
       "E08",
       "E09"
     ],
-    "status": "unresolved"
+    "status": "resolved",
+    "verification_outcome": "Figure1实际数据及450DPI PNG/SVG已生成并与图注对应。"
   },
   {
     "id": "M25",
@@ -220,6 +244,17 @@
       "E06",
       "E07"
     ],
-    "status": "unresolved"
+    "status": "resolved",
+    "verification_outcome": "Figure2实际数据及450DPI PNG/SVG已生成并与图注对应。"
+  },
+  {
+    "id": "V01",
+    "description": "7/8旧完整版本与601/602历史差异",
+    "sources": [
+      "E05",
+      "E13"
+    ],
+    "status": "partial",
+    "verification_outcome": "旧筛选档602唯一记录确有其物；当前完整表双达标46。旧6000完整版本及601口径尚未匹配。"
   }
 ]

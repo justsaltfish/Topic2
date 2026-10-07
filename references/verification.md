@@ -8,3 +8,11 @@
 | 2 | https://arxiv.org/abs/2105.05233 | 分类器梯度引导思想出处 | 元数据及摘要；本文回归预测器引导公式待核对 |
 
 参考文献当前按预印本列出，不声称已经核对期刊或会议版本。数据库、FIMO 和最终模型实现的其他引用需在版本确定后补齐。
+
+## 数据库与扫描方法引用
+
+[3] JASPAR 2024：已读取 Oxford Academic 原始文章页，核对前三作者、题名、2024卷期和 DOI。来源：https://academic.oup.com/nar/article/52/D1/D174/7420101。
+
+[4] FIMO：已核对 Oxford Academic 原始文章搜索结果中的三位作者、题名、卷期页码和 DOI。来源：https://academic.oup.com/bioinformatics/article/27/7/1017/232614。
+
+外部文献只提供方法出处；本文使用的版本、阈值和实验结果来自本课题实际代码与产物。

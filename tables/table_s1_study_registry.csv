@@ -1,0 +1,5 @@
+study_id,generator,archive_branch,checkpoint,condition,n,sampling_steps,guidance,scale,temperature,seed_scope
+Q-A,DDPM-A,Ara/35s/down/DDPM/v1,epoch2000,unconditional,9000,1000,none,,,Python random only; torch seed not recorded
+Q-M,DDPM-M,Maize/35s/down/DDPM/v1,epoch2000,unconditional,9000,1000,none,,,Python random only; torch seed not recorded
+G-A,DDPM-A,guide_generation/v3/DDPM,epoch2000,Ara35S_DOWN,100 per method,1000,"five methods, last200 steps",500; post_lr0.5,not used,torch seed42; shared initial noise only
+G-M,DDPM-M,2026/08/04/maize_guided_epoch_sweep,epochs50-2000 step50,Maize35S_UP/DOWN/BOTH,500 per epoch/mode,1000,gradient through soft x0 estimate,0.5,0.1,Python/NumPy/torch seed42

@@ -1,0 +1,3 @@
+condition,n,pcc,evaluation_scope
+up,11969,0.8921159561803655,full_available_dataset_not_independent_test
+down,11969,0.7728203202647866,full_available_dataset_not_independent_test
