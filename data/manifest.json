@@ -210,7 +210,7 @@
     },
     {
       "path": "data/verified/predictor_audit_sources.csv",
-      "sha256": "ff7d55a20120d36c76de53d0ca785fe1fd347a2893916a9d4c3e285ec41d74f6",
+      "sha256": "d71e6a332c8cb0fba96c6f911b62e90ee3de3561822b7a4e61b6b3dc9bbb0c7c",
       "status": "verified",
       "scope": "current_archive_analysis"
     },
@@ -222,7 +222,7 @@
     },
     {
       "path": "data/verified/predictor_training_audit.csv",
-      "sha256": "ae95f798e2d392f4ce8704d53d8225eadfc9e1e1d6400f10d7bc4660ef9a1248",
+      "sha256": "b0d2ea3e080e766963084f27c29b2ced2ac1f62399f05cab87917ae9f4c60815",
       "status": "verified",
       "scope": "current_archive_analysis"
     },
