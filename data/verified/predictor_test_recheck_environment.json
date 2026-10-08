@@ -9,8 +9,27 @@
   "dataset_sha256": "f1bd56a88d5f8d1baabcb29e855a8c11f404dcf5aacc1b184c024287fccd8f49",
   "recheck_date": "2026-10-08",
   "historical_test_indices_archived": false,
-  "n_models": 7,
-  "n_test_observations": 8387,
-  "ara_up_status": "pending_author_confirmation_of_reconstructed_split",
-  "export_note": "Individual scores and labels are kept in local private export; public membership table contains row indices and sequence hashes only."
+  "n_models": 8,
+  "n_test_observations": 9584,
+  "ara_up_status": "completed_author_authorized_reconstructed_test_set",
+  "ara_up_environment": {
+    "kind": "environment",
+    "torch": "1.11.0",
+    "numpy": "1.21.5",
+    "pandas": "1.4.4",
+    "python": "3.8.13",
+    "device": "cpu",
+    "model_source_sha256": "93d5d3294ff671a06a554a4ad03ccebb554d6a07aac88dc7bbba0db8da79ac66",
+    "training_source_sha256": "2b7540001b0c9be082867a5a35c90dfbe38dda7e96a7ce83277bcdd2bf4adc8f",
+    "dataset_sha256": "f1bd56a88d5f8d1baabcb29e855a8c11f404dcf5aacc1b184c024287fccd8f49",
+    "fractional_rounding": "floor_each_then_round_robin_remainder",
+    "author_authorized_reconstruction": true
+  },
+  "ara_up_valid_samples": 11971,
+  "ara_up_split_lengths": [
+    9577,
+    1197,
+    1197
+  ],
+  "export_note": "Individual scores and labels are in local private exports; public membership table contains row indices and sequence hashes only."
 }

@@ -222,13 +222,13 @@
     },
     {
       "path": "data/verified/predictor_test_membership.csv",
-      "sha256": "8ea3812902373c7347f263eda7b69a1efddcede15a65c23c3effce0fad574e7f",
+      "sha256": "d9b43edaca6439f99d0ed28934fcd555a1c1664f75d85d0ba2e0d82903664930",
       "status": "verified",
       "scope": "current_archive_analysis"
     },
     {
       "path": "data/verified/predictor_test_recheck.csv",
-      "sha256": "77ca84948a7f3fb90162cc582b8c7b6a28f9a1563743ea739d3a21dc13e20999",
+      "sha256": "ee90cd09275cc7b9b148d9855037c48adfe08b418745eb7692781274e28c5004",
       "status": "verified",
       "scope": "current_archive_analysis"
     },
@@ -271,7 +271,7 @@
   ],
   "review_docx": {
     "path": "manuscript/computational_sections_zh.docx",
-    "sha256": "e51192f6836f661da0c133fc04b635083424b0284930611e4c452ce5f165cebe",
+    "sha256": "47b169437b8a302f821afd5e395832d8848582f1fd38614df9f402b22fc1cfc6",
     "status": "verified",
     "scope": "current_archive_analysis"
   }
