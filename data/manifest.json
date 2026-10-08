@@ -78,6 +78,30 @@
       "sha256": "9ef77a596fc6f266b846933982ecf3fe1e94cf202cdea15cd903f32d5472fd4f",
       "status": "verified",
       "scope": "current_archive_analysis"
+    },
+    {
+      "path": "figures/model_selection/figure_checkpoint_selection.png",
+      "sha256": "7703fc6bc0c7bf55744597217d2553b8b982dbba2de8dcf8fc7eaf4be1ad0a71",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "figures/model_selection/figure_checkpoint_selection.svg",
+      "sha256": "c7d38b3359a76ecb72b7bd7e28017005ded1323263169974beb1e34998bbc01b",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "figures/model_selection/figure_model_family_screening.png",
+      "sha256": "1d6c3a648e7421d0293d060faa70fe18cee7126ffe8eb5fb0b474048a0a78eb4",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "figures/model_selection/figure_model_family_screening.svg",
+      "sha256": "e171897b21c6a68dc4564f29e925954e85a5949e598dc6cb2453a2dfcbf19500",
+      "status": "verified",
+      "scope": "current_archive_analysis"
     }
   ],
   "archive_figures_verified": true,
@@ -169,6 +193,48 @@
     {
       "path": "data/verified/kmer_frequencies.csv",
       "sha256": "e345dd857ab785119e54e3636a5ac923f075bb5d5ab5bae2024204701be7909d",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "data/verified/legacy_family_screening.csv",
+      "sha256": "54502b080658bc777c753d9fe31b7c6b9b999407ec0036c3338ca6380960cf44",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "data/verified/legacy_full_checkpoint_quality.csv",
+      "sha256": "44e8dde4f9cb4d3961da7a93b8a0bcc3036af939a3e7be4b4fbab5c82f41387c",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "data/verified/legacy_full_fasta_sources.csv",
+      "sha256": "c15350efae92e33589e4744d90f7d69cc4d304a156e99e172e19ca98a4f20228",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "data/verified/legacy_selection_observations.csv",
+      "sha256": "186ecf2f6de60a4f3cc33c9855f3461710bf97c7ec88137065415fc752bd9763",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "data/verified/legacy_selection_quality.csv",
+      "sha256": "2d9cf3e92b3a3fa4029f3c169657705a1d2d54ff387ae8dd29219b71489cef88",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "data/verified/legacy_selection_sixmer.csv",
+      "sha256": "da6bb10e5c187802cc8fc6a84da0e757448e1ba2c2fb722e4062ccb6dbc86da7",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "data/verified/legacy_selection_source_manifest.csv",
+      "sha256": "19e89eb0b7f11f82bd7e9d4ebc1c304411f6db8c79a2be62087c8cbba7d89140",
       "status": "verified",
       "scope": "current_archive_analysis"
     },
@@ -277,6 +343,36 @@
     {
       "path": "data/verified/source_manifest.csv",
       "sha256": "051b5588fd53374c032ffc618dd70024f7782896ebe729413030563e1de50a63",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "data/verified/downstream_lineage_report.json",
+      "sha256": "049e9d202e9f878d6008644ffed8a6ae91b40e0f13619eaced9236bdc31a253d",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "data/verified/legacy_selection_fimo_audit.json",
+      "sha256": "0f8b67349830a7f80f67ac9f22b090161466a458f72d523a82e0213649c0df01",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "data/verified/legacy_selection_quality_protocol.json",
+      "sha256": "1712a030f4da53446af980921f275a67529474c3837a50c8271699b705fb5dd6",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "data/verified/model_selection_ppt_provenance.json",
+      "sha256": "db2a100637c9c31ea206b182ded56ba8a21122e2366fd902253c0684c112f0c0",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "data/verified/predictor_test_recheck_environment.json",
+      "sha256": "b0d5705aa95da81204f1c70e1dac40db3c9e07e0d954dbc1f12bda7234e03c9e",
       "status": "verified",
       "scope": "current_archive_analysis"
     },

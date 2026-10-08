@@ -13,3 +13,12 @@
 图件输入与输出 SHA256 登记于 data/manifest.json。原始核验范围见 data/verified/source_manifest.csv。正文主图的 epoch2000 来自实际已有生成与引导资产；并非替用户确认最终生产权重。e1500 为历史 strict 阈值下达标数量最高的探索性例子，也不是自动选择的最终 checkpoint。
 
 图1真实参照由完整数据来源抽取，并非独立测试集。图2C 的不同阈值是事后评价；图2F 的同聚物长度10/20只作描述性敏感性分析，不是已经冻结的生物学质量门槛。图中序列数不能作为独立种子重复数。
+
+## 旧版final模型选择图
+
+| Figure | Data | 类型 | 脚本 | 输出 |
+|---|---|---|---|---|
+| Family screening | data/verified/legacy_family_screening.csv | 历史320行真实CSV；checkpoint不是独立重复 | figures/plot_model_selection.py | figures/model_selection/figure_model_family_screening.png / .svg |
+| Checkpoint selection | data/verified/legacy_full_checkpoint_quality.csv | 80份现存FASTA重算与历史motif表；三候选原始FIMO已重计数 | figures/plot_model_selection.py | figures/model_selection/figure_checkpoint_selection.png / .svg |
+
+真实参照11984条NG来源序列，非独立测试集；每生成checkpoint1000条；不同筛选批次分开作图。详见results/00_model_selection/README.md。

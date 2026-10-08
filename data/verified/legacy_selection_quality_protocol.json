@@ -1,0 +1,32 @@
+{
+  "reference_source_relative_path": "topic_all/topic2_Diffusion/data/NG_enhancer_data.csv",
+  "reference_sha256": "f1bd56a88d5f8d1baabcb29e855a8c11f404dcf5aacc1b184c024287fccd8f49",
+  "n_real": 11984,
+  "sources": [
+    {
+      "source_relative_path": "topic_all/topic2_Diffusion/DDPM/final/DDPM/gen_fasta/900.fasta",
+      "size": 170893,
+      "sha256": "3e60210bbac99bb555df48f30a01deb81ce6eccedf4cd90ef13d238a2a6ad3d4"
+    },
+    {
+      "source_relative_path": "topic_all/topic2_Diffusion/DDPM/final/DDPM/gen_fasta/1800.fasta",
+      "size": 170893,
+      "sha256": "d56c327dbf118d1700c6c2c60f4db441c6564392ed849a468eb5150106b61a6f"
+    },
+    {
+      "source_relative_path": "topic_all/topic2_Diffusion/DDPM/final/DDPM/gen_fasta/2000.fasta",
+      "size": 170893,
+      "sha256": "bc3603ee1f7d91fcfa11890571b92d4cc4ee721326f9408de38f8d22ac1bd396"
+    },
+    {
+      "source_relative_path": "topic_all/topic2_Diffusion/Dit/final/Dit/gen_fasta/1050.fasta",
+      "size": 170893,
+      "sha256": "1e1dc8d0217938f9c6d895f4401b80446f05b0bd99b2fc96921cd4473b26a27a"
+    }
+  ],
+  "sixmer": "forward strand, overlapping windows, complete 4096-word vector",
+  "gc_wd": "empirical per-sequence GC-fraction Wasserstein distance",
+  "hamming": "positionwise mismatches/160; 10000 sampled pairs, RandomState42; interval not biological replicates",
+  "repeat20": "retrospective descriptive threshold, no declared acceptance rule",
+  "reference_status": "full current valid NG source, not independent held-out test set"
+}

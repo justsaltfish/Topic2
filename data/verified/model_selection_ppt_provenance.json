@@ -1,0 +1,16 @@
+{
+  "source_filename": "enhancer.pptx",
+  "sha256": "2d185bd17816767bf5a90a6bb8447bbedd71d56e6acd5188578391c86661de53",
+  "reviewed_slides": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "historical_selection_text": "DiT选择1050epoch；DDPM选择1800epoch",
+  "presentation_not_uploaded": true
+}

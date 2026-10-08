@@ -19,9 +19,9 @@ if __name__=="__main__":
                     raw_results_verified=True,archive_figures_verified=True,
                     final_figures_verified=False,final_dataset_confirmed=False,
                     final_checkpoint_confirmed=False,final_threshold_confirmed=False)
-    files=sorted((ROOT/"data/verified").glob("*.csv"))+[ROOT/"data/verified/verification_report.json",ROOT/"tables/table_s1_study_registry.csv"]
+    files=sorted((ROOT/"data/verified").glob("*.csv"))+sorted((ROOT/"data/verified").glob("*.json"))+[ROOT/"tables/table_s1_study_registry.csv"]
     manifest["analysis_files"]=[entry(p) for p in files]
-    manifest["figure_outputs"]=[entry(p) for p in sorted((ROOT/"figures/results").glob("*")) if p.suffix in (".png",".svg")]
+    manifest["figure_outputs"]=[entry(p) for folder in ("figures/results", "figures/model_selection") for p in sorted((ROOT/folder).glob("*")) if p.suffix in (".png",".svg")]
     manifest["final_result_files"]=[entry(ROOT/name) for name in (
         "data/verified/sequence_quality_summary.csv","data/verified/ara_guidance_methods_recomputed.csv",
         "data/verified/maize_guided_sweep_recomputed.csv","data/verified/homopolymer_sensitivity.csv")]

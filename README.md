@@ -4,6 +4,10 @@
 
 **当前状态：已有真实数值与图件的核验稿，最终模型、阈值和投稿要求待作者确认。** 不再使用空白结果槽位；无法恢复的历史信息以限制及待确认项说明，不补造。
 
+## 模型与权重选择图（2026-10-08）
+
+[模型选择结果图与核验说明](results/00_model_selection/README.md)：已读取PPT第8–15页，重算DDPM/DiT 80个checkpoint。生成质量推荐候选为旧版final **DDPM epoch1800**；6-mer PCC为该轮最高0.9724，并在三项质量指标上优于历史DiT1050。图中同时展示LDM的不同指标优势及DDPM其他批次的权衡；10/1引导结果仍属于epoch2000。
+
 ## 审阅入口
 
 - [合并中文核验稿](manuscript/computational_sections_zh.md)及 [Word 核验稿](manuscript/computational_sections_zh.docx)，Word 已嵌入两张实际结果图。
