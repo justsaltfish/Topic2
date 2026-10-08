@@ -104,6 +104,30 @@
       "scope": "current_archive_analysis"
     },
     {
+      "path": "figures/model_selection/figure_unified_quality_all_candidates.png",
+      "sha256": "033d27e1a5e02525488151b8272271488e17da66a2756aeecdc695968ff7e396",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "figures/model_selection/figure_unified_quality_all_candidates.svg",
+      "sha256": "400f5e8bdc94b5feb6623eb63e04d13564f5c0c827271b5bce26b3c3aa2f276c",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "figures/model_selection/figure_unified_quality_comparison.png",
+      "sha256": "667266ae47cae8d1094535a99ce7eef8784a3706249b7d0c3acc251f5cdbd3a4",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "figures/model_selection/figure_unified_quality_comparison.svg",
+      "sha256": "a7462438e62f926aefddadf52e814a2d32cdb2d54883562a89688653dffe15c7",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
       "path": "figures/model_selection/figure_uvit_comparison.png",
       "sha256": "8d8df7c365a7b7e620040fbd8ecb7e913083883da74dfd44e50eabf8969b2b92",
       "status": "verified",
@@ -359,6 +383,42 @@
       "scope": "current_archive_analysis"
     },
     {
+      "path": "data/verified/unified_quality_candidates_pre_fimo.csv",
+      "sha256": "f7d109253913e2c1320ec477618e3439c17aec39e31fa442714d3b2561c1b081",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "data/verified/unified_quality_comparison.csv",
+      "sha256": "2890248006d985cad5a5872e9f8eebb148c6139c5cc7f1ea95894c902cf05300",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "data/verified/unified_quality_gc_observations.csv",
+      "sha256": "696b1e4c916c720193855152a8cb2470bff3c3b28800444de1d7b0a723e2d1b0",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "data/verified/unified_quality_membership.csv",
+      "sha256": "eaa1319e048db666a507ea66bef5a97b6ffc98981e077a9ac668b18f661456cd",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "data/verified/unified_uvit4_sixmer_sweep.csv",
+      "sha256": "9a56104868b7eb70c5319febd4bb70cff4b2e15426c52373f778bdeb8661ba02",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "data/verified/unified_uvit4_source_manifest.csv",
+      "sha256": "c8274470ee9175dd558ba935d18712212a41432a98dac8b58853ea057d9f8fcd",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
       "path": "data/verified/uvit_inclusive_model_curves.csv",
       "sha256": "507988b6863d06387f157818a33cb38eeb6827b9c61b0c40ca87e08ddce7c495",
       "status": "verified",
@@ -397,6 +457,18 @@
     {
       "path": "data/verified/predictor_test_recheck_environment.json",
       "sha256": "b0d5705aa95da81204f1c70e1dac40db3c9e07e0d954dbc1f12bda7234e03c9e",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "data/verified/unified_fimo_scan_results.json",
+      "sha256": "335cda7131defcd917051d1b4ad1b2c613eb787b3ae1f09ef689899536de7876",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "data/verified/unified_quality_protocol.json",
+      "sha256": "94f4de3cb72a8359b38efafee7cd84dae9a34e901cc08b3e98708319f4adeac3",
       "status": "verified",
       "scope": "current_archive_analysis"
     },

@@ -1,0 +1,34 @@
+{
+  "reference_source": "topic_all/topic2_Diffusion/data/NG_enhancer_data.csv",
+  "reference_sha256": "f1bd56a88d5f8d1baabcb29e855a8c11f404dcf5aacc1b184c024287fccd8f49",
+  "reference_n": 11984,
+  "reference_normalized_sequence_set_sha256": "98be4c98232f0daa62e68bc4bf444a9bb0851d3e801c3b77d24191ff28b4e135",
+  "sampling": "all 1000 legacy records; UViT 1000/9000 uniformly without replacement using Python Random(42); same fixed sample used for every metric",
+  "sixmer": "forward overlapping 6-mers, complete 4096 vector, aggregate frequencies",
+  "gc": "empirical per-sequence fraction, 1D WD, fixed full reference",
+  "candidate_selection": "historical candidates and 6-mer optima of each existing 40-checkpoint sweep; retrospective, not production model selection",
+  "reference_is_independent_test": false,
+  "fimo": {
+    "kind": "environment",
+    "fimo_version": "5.4.1",
+    "fimo_executable_sha256": "aba6696d5998e7b8aa8fbe0feeb66317dcbb294169f39757d1be6ce7db8e8751",
+    "database_relative_path": "topic_new26/topic_enhancer/model_about/Database_comparison/jaspar/database/JASPAR2024_CORE_plants_non-redundant_pfms_meme.txt",
+    "database_sha256": "8444ed8c0d266b66f99d9bbe5aaa452599b0f4f5496b303a3effcedd474d2335",
+    "settings": {
+      "text": true,
+      "no_qvalue": true,
+      "pvalue_threshold": 0.0001,
+      "background": "--nrdb--",
+      "motif_pseudocount": 0.1,
+      "both_strands": true,
+      "position_pseudocount": 0
+    },
+    "server_output_files_created": false
+  },
+  "motif_position": "floor((start+stop)/2), positions0..159, observed hit weights only; no positional pseudocount",
+  "fimo_real_fasta_source": "topic_all/evaluate_effect/test/real_data/NG_enhancer_data.fasta",
+  "fimo_real_fasta_sha256": "8f8a0a6cbaeba06ec6dab1f97c5dde6580bd383254f2f9ad52e130c6e3569311",
+  "new_analysis": true,
+  "new_training_or_generation": false,
+  "server_files_written": false
+}

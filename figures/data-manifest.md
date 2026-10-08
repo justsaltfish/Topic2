@@ -24,3 +24,12 @@
 真实参照11984条NG来源序列，非独立测试集；每生成checkpoint1000条；不同筛选批次分开作图。详见results/00_model_selection/README.md。
 
 | UViT-inclusive comparison | data/verified/uvit_inclusive_model_curves.csv, uvit_inclusive_wd_best.csv | 历史JASPAR2024同参照CSV；与旧final2022分开 | figures/plot_model_selection.py | figures/model_selection/figure_uvit_comparison.png / .svg |
+
+## 新增统一协议图
+
+| Figure | Data | 类型 | 脚本 | 输出 |
+|---|---|---|---|---|
+| Unified quality | data/verified/unified_quality_comparison.csv, unified_quality_membership.csv, unified_fimo_scan_results.json | 实际固定样本及新的CPU FIMO同协议扫描，非mock | figures/plot_unified_quality_comparison.py | figures/model_selection/figure_unified_quality_comparison.png / .svg |
+| All candidates | 同上 | 包含全部7候选，保持旧候选的对照 | 同上 --all-candidates | figures/model_selection/figure_unified_quality_all_candidates.png / .svg |
+
+旧版模型选择图未重新运行FIMO；本次用户确认后实际执行CPU --text扫描，未写服务器文件。新图参考和数据库统一，位置WD不加位置伪计数，与旧图数值不可直接混用。

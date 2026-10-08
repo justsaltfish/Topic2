@@ -15,3 +15,5 @@
 追加模型选择证据（2026-10-08）：PPT第15页恢复历史DDPM1800/DiT1050选择；对80份FASTA重算，旧版final DDPM1800的6-mer PCC最高，且三项指标同时优于DiT1050。因此推荐DDPM1800作为生成质量主候选。10/1引导实际使用epoch2000；若要求统一权重，需要1800的对应引导对照或另行冻结主线，不能自动换标。见results/00_model_selection/README.md。
 
 修订：上一项DDPM1800推荐仅来自历史候选比较，遗漏了UViT。已补入2024批次，WD最佳是UViT-v2 config4 epoch1800；旧final DiT100位置WD低于DDPM900，DDPM1800也不是WD最小。因此撤回“单一最终模型”口径：主指标与最低质量门槛未冻结，最终模型及checkpoint仍待确认。
+
+统一评价追加：候选均1000条、同NG参照、同JASPAR2024新扫描。DDPM1800与DiT1200的6-mer接近，但前者motif位置WD更低；UViT-v2 cfg4候选motif位置WD更低而6-mer/GC偏差更大。因此DDPM可作为综合序列质量的研究基础候选，但不等于所有指标获胜。最终主指标、权重和独立验证仍待作者确定。见results/00_model_selection/unified_comparison.md。
