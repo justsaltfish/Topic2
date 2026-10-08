@@ -251,6 +251,30 @@
       "scope": "current_archive_analysis"
     },
     {
+      "path": "data/verified/slide_comparison_sources.csv",
+      "sha256": "da77ff8be437bfb0848cf1ec06297d8660f046a9c364c580a9be733cc3128cb3",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "data/verified/slide_left_model_curves.csv",
+      "sha256": "96eafdf679bf4b18b8be840dcc15f2f6691b5e4badc26622a1224140d0a9f308",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "data/verified/slide_legacy_uvit_sources.csv",
+      "sha256": "23bfb39f2ac955045188575c6f3a01b29bf2f8789a523d6b95d3177e1afc3d4d",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "data/verified/slide_right_model_curves.csv",
+      "sha256": "171cfd4da08c5cd72f7ed957b3e91a811fdbbb0b8fdd420a176406170575e585",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
       "path": "data/verified/source_manifest.csv",
       "sha256": "051b5588fd53374c032ffc618dd70024f7782896ebe729413030563e1de50a63",
       "status": "verified",

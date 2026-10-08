@@ -53,3 +53,7 @@ python3 scripts/validate_package.py --submission
 ## 后续来源追溯追加
 
 [模型与序列来源追溯](evidence/downstream-lineage.md)确认：SHAP61条来自DDPM-A旧BOTH档；8/4Maize扫描用DDPM-M；10/1补验使用与A/M参数内容都不同的旧版final epoch2000。多物种插入共用1000条背景，但其最初生成来源仍未解决。主文目前报告A/M历史分析，新补验没有自动并入最终模型或主结果。
+
+## 生成模型比较页核验
+
+[原图来源与绘图问题](evidence/generator-comparison-slide-audit.md)：两图DDPM均是DDPM-M；左图UViT为旧config1，右图为v2 config4（WD最佳epoch1800）。左图Real WD参照线误读为1.2117，不能直接用于投稿。曲线CSV及来源哈希已归档。
