@@ -12,6 +12,10 @@
 - [对应方法](chapters/03_methods_computational.md)与[补充材料入口](supplementary/README.md)。
 - [核验报告](evidence/verification-report.md)、[来源清单](data/verified/source_manifest.csv)、[未解决项目](evidence/missing-items.md)与[作者决策](evidence/author-decisions.md)。
 
+## 预测器核验追加（2026-10-08）
+
+[八个预测器的训练与权重核验](evidence/predictor-training-audit.md)：数据划分、随机种子、最佳轮次、测试PCC及权重SHA256。Ara UP的0.7529来自旧日志，其测试口径与当前最佳权重对应关系尚未确认；不能将八项宣称为统一复验结果。
+
 ## 本次实际核验
 
 读取 224 份代码、配置、日志、序列或预测表。对两个 DDPM 实例的 80 份无引导 FASTA 核对长度和字符，共 720,000 条；对玉米扫描 120 组、60,000 条逐样本记录重算均值、最大值和四套阈值计数；对 Ara DOWN 五种方法各100对重算预测变化。重新计算两组 epoch2000 生成序列与等量真实参照的 GC、k-mer、完全匹配、同聚物与内部 Hamming 分布，并重计数四份已有 FIMO 文件。FIMO XML 的版本和设置一致。

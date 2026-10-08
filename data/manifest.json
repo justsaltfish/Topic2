@@ -209,8 +209,20 @@
       "scope": "current_archive_analysis"
     },
     {
+      "path": "data/verified/predictor_audit_sources.csv",
+      "sha256": "ff7d55a20120d36c76de53d0ca785fe1fd347a2893916a9d4c3e285ec41d74f6",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
       "path": "data/verified/predictor_test_log_verified.csv",
       "sha256": "af4e83a55fd604140b384844e7cf680194287db1475626cd109a60eb1dd127bf",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "data/verified/predictor_training_audit.csv",
+      "sha256": "ae95f798e2d392f4ce8704d53d8225eadfc9e1e1d6400f10d7bc4660ef9a1248",
       "status": "verified",
       "scope": "current_archive_analysis"
     },
