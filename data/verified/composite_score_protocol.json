@@ -1,0 +1,69 @@
+{
+  "status": "exploratory_proposal_not_author_frozen",
+  "candidate_n": 7,
+  "metrics": [
+    [
+      "sixmer_pcc",
+      "higher"
+    ],
+    [
+      "gc_wasserstein",
+      "lower"
+    ],
+    [
+      "jaspar2024_position_wd",
+      "lower"
+    ],
+    [
+      "motif_hit_density_abs_deviation",
+      "lower"
+    ]
+  ],
+  "default_weights": [
+    0.25,
+    0.25,
+    0.25,
+    0.25
+  ],
+  "group_weights": {
+    "sequence_composition": 0.5,
+    "jaspar_motif": 0.5
+  },
+  "rank_formula": "s_j = 100*(N-average_rank_j)/(N-1); S = arithmetic mean of four s_j; ties receive average ranks",
+  "quantity": "absolute difference from real mean hits per sequence, lower is better; not maximize count",
+  "alternative": "same four metrics and equal weights with candidate-dependent min-max normalization",
+  "weight_grid": "all 84 combinations in 0.1 steps, each metric weight at least0.1, weights sum1; exact co-winners retained",
+  "weight_grid_not_probability": true,
+  "rounded_pcc": "round PCC to3 decimals solely for near-tie sensitivity; not an acceptance threshold",
+  "equal_rank_leaders": [
+    {
+      "model": "DDPM",
+      "epoch": "1800",
+      "score": 79.16666666666667
+    }
+  ],
+  "equal_minmax_leaders": [
+    {
+      "model": "DiT",
+      "epoch": "1050",
+      "score": 83.81811770971721
+    }
+  ],
+  "rounded_pcc_rank_leaders": [
+    {
+      "model": "DDPM",
+      "epoch": "1800",
+      "score": 77.08333333333333
+    }
+  ],
+  "retrospective": true,
+  "production_checkpoint_selected": false,
+  "limitations": [
+    "candidate-dependent normalization and ranks",
+    "seven preselected candidates, not a complete120-checkpoint multi-metric scan",
+    "ranks ignore numerical effect magnitude",
+    "metrics can be correlated",
+    "one generated sample per candidate, no uncertainty or independent validation",
+    "raw reference originates from training data"
+  ]
+}

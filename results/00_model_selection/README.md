@@ -1,5 +1,9 @@
 # 生成模型与checkpoint选择：审阅入口
 
+## 综合分讨论方案
+
+[四项等权排名分及归一化敏感性](composite_score_proposal.md)：一个可审阅的探索性方案，不倒推权重或隐去替代排序。
+
 ## 最新统一评价图
 
 [DDPM、DiT、UViT同协议四面板图与结果](unified_comparison.md)：所有候选1000条，统一NG参照和JASPAR2024新扫描。DDPM/DiT的6-mer最佳批次接近；DDPM motif位置WD更低，DiT GC略低。UViT位置WD更低，但其6-mer和GC偏差更大。新增motif命中密度面板：DiT1050更接近真实数量水平；6-mer初筛不能当作最终综合选择。下文为此前历史批次比较，不能与新图混用数值。

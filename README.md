@@ -4,6 +4,10 @@
 
 **当前状态：已有真实数值与图件的核验稿，最终模型、阈值和投稿要求待作者确认。** 不再使用空白结果槽位；无法恢复的历史信息以限制及待确认项说明，不补造。
 
+## 最新：综合评分讨论方案
+
+[四项等权排名分及敏感性](results/00_model_selection/composite_score_proposal.md)：仅用JASPAR相关四指标，当前七候选中DDPM1800得79.17、排名第一；换min–max归一化则DiT1050第一。方案为回顾性探索，未冻结为最终选型规则；两种结果均保留。
+
 ## 最新：统一协议四面板图
 
 [同协议比较图与完整数据](results/00_model_selection/unified_comparison.md)：已补齐UViT-v2 config4，统一每候选1000条、NG真实参照与JASPAR2024扫描。DDPM与DiT的6-mer相关性接近，DDPM motif位置WD较低；UViT位置WD更低，但6-mer/GC偏差更大。图已补入motif数量：DiT1050的命中密度更接近真实参照。图展示实际权衡；按6-mer最高选候选只是初筛，最终模型/权重未确定。

@@ -92,6 +92,30 @@
       "scope": "current_archive_analysis"
     },
     {
+      "path": "figures/model_selection/figure_composite_normalization_sensitivity.png",
+      "sha256": "3318dac970b126bef14397fd786db955292f3441d3785dfa76a2eab9b5606b65",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "figures/model_selection/figure_composite_normalization_sensitivity.svg",
+      "sha256": "f1ea84fbe7c8ba0aba6d21edf4fe9f69269c9c823e031fbdf8efe84cf2b2996f",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "figures/model_selection/figure_composite_rank_proposal.png",
+      "sha256": "faa8b3edc289e4edab76b5b3d7442a58b6325ddb4107eefc5e843b658c1cbb9f",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "figures/model_selection/figure_composite_rank_proposal.svg",
+      "sha256": "42f1263d3553ae63a43da0c829c8ed90c20db2b23925175cdb6db3883e280e8d",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
       "path": "figures/model_selection/figure_model_family_screening.png",
       "sha256": "1d6c3a648e7421d0293d060faa70fe18cee7126ffe8eb5fb0b474048a0a78eb4",
       "status": "verified",
@@ -169,6 +193,24 @@
     {
       "path": "data/verified/checkpoint_lineage_fingerprints.csv",
       "sha256": "3be03c499ae15d20a6df4ec660602e737be8fdd89f3ea8514e5f694240bcb9ae",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "data/verified/composite_per_metric_scores.csv",
+      "sha256": "7efb1f034837b7104d36cf61c6aff3a7f9f787ae0c57ba568f463871ecb0bde5",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "data/verified/composite_score_proposal.csv",
+      "sha256": "e4be9d776ad452f84f352f9f81462a9f82a775b7734d7fab50fe0cde8137380b",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "data/verified/composite_weight_sensitivity.csv",
+      "sha256": "48c70984fb611f83086d602da71903453d75a16fb1a6ad3dd508ddf3aa77ec5e",
       "status": "verified",
       "scope": "current_archive_analysis"
     },
@@ -427,6 +469,12 @@
     {
       "path": "data/verified/uvit_inclusive_wd_best.csv",
       "sha256": "7f0e97c088e2586b06db096da18eb3ab212eac411c90a7ed54b4b2da2361ad38",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "data/verified/composite_score_protocol.json",
+      "sha256": "2691ed98f8f78e2fe2c284564121723b33391af8fecd29020cfd088b81387d92",
       "status": "verified",
       "scope": "current_archive_analysis"
     },

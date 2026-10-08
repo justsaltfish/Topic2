@@ -35,3 +35,12 @@
 旧版模型选择图未重新运行FIMO；本次用户确认后实际执行CPU --text扫描，未写服务器文件。新图参考和数据库统一，位置WD不加位置伪计数，与旧图数值不可直接混用。
 
 统一图第四面板追加motif命中密度，使用已有同协议扫描的hits/n及其与真实38.2948097463的差，不需要新扫描。候选比较包含DiT1050的数量优势。
+
+## 探索性综合评分方案
+
+| Figure | Data | 类型 | 脚本 | 输出 |
+|---|---|---|---|---|
+| Equal-rank composite | composite_score_proposal.csv, composite_per_metric_scores.csv | 真实统一评价指标的探索性确定计算，非mock；非最终规则 | figures/plot_composite_score_proposal.py | figure_composite_rank_proposal.png / .svg |
+| Normalization sensitivity | 同上 | 同指标、同权重，比较排名与min–max | 同上 | figure_composite_normalization_sensitivity.png / .svg |
+
+所有路径位于data/verified与figures/model_selection。DDPM排名分第一，DiT1050 min–max第一，两者同时报告。
