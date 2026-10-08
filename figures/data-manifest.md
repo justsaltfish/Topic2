@@ -22,3 +22,5 @@
 | Checkpoint selection | data/verified/legacy_full_checkpoint_quality.csv | 80份现存FASTA重算与历史motif表；三候选原始FIMO已重计数 | figures/plot_model_selection.py | figures/model_selection/figure_checkpoint_selection.png / .svg |
 
 真实参照11984条NG来源序列，非独立测试集；每生成checkpoint1000条；不同筛选批次分开作图。详见results/00_model_selection/README.md。
+
+| UViT-inclusive comparison | data/verified/uvit_inclusive_model_curves.csv, uvit_inclusive_wd_best.csv | 历史JASPAR2024同参照CSV；与旧final2022分开 | figures/plot_model_selection.py | figures/model_selection/figure_uvit_comparison.png / .svg |

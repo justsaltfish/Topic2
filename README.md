@@ -6,7 +6,7 @@
 
 ## 模型与权重选择图（2026-10-08）
 
-[模型选择结果图与核验说明](results/00_model_selection/README.md)：已读取PPT第8–15页，重算DDPM/DiT 80个checkpoint。生成质量推荐候选为旧版final **DDPM epoch1800**；6-mer PCC为该轮最高0.9724，并在三项质量指标上优于历史DiT1050。图中同时展示LDM的不同指标优势及DDPM其他批次的权衡；10/1引导结果仍属于epoch2000。
+[模型选择结果图与核验说明](results/00_model_selection/README.md)：已读取PPT第8–15页，重算DDPM/DiT 80个checkpoint。已补入**UViT-v1/v2**：2024批次WD最佳是UViT-v2 config4 epoch1800（0.1404）。旧final DDPM1800仅是6-mer PCC最高候选，WD并非最低；DiT与其他DDPM批次各有优势。**最终模型和权重未确定**，不预设DDPM胜出；10/1引导结果仍属于epoch2000。
 
 ## 审阅入口
 

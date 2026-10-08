@@ -81,13 +81,13 @@
     },
     {
       "path": "figures/model_selection/figure_checkpoint_selection.png",
-      "sha256": "7703fc6bc0c7bf55744597217d2553b8b982dbba2de8dcf8fc7eaf4be1ad0a71",
+      "sha256": "40547beea70dffc0f974490d513445f5c123f86bc53c395a547336293b1807c2",
       "status": "verified",
       "scope": "current_archive_analysis"
     },
     {
       "path": "figures/model_selection/figure_checkpoint_selection.svg",
-      "sha256": "c7d38b3359a76ecb72b7bd7e28017005ded1323263169974beb1e34998bbc01b",
+      "sha256": "339b68f1922318813ed866300c113c113653f4520096bca09d0b053c42940abb",
       "status": "verified",
       "scope": "current_archive_analysis"
     },
@@ -99,7 +99,19 @@
     },
     {
       "path": "figures/model_selection/figure_model_family_screening.svg",
-      "sha256": "e171897b21c6a68dc4564f29e925954e85a5949e598dc6cb2453a2dfcbf19500",
+      "sha256": "672029f8b0c1f50dbdc6ba5acc8b322afad99302d9fbd09f09e35ec4a7b9348d",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "figures/model_selection/figure_uvit_comparison.png",
+      "sha256": "8d8df7c365a7b7e620040fbd8ecb7e913083883da74dfd44e50eabf8969b2b92",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "figures/model_selection/figure_uvit_comparison.svg",
+      "sha256": "a89689277ec4d28f3104d614e6d9765931c4e5a66e5fff3e6b71e2377734c2b1",
       "status": "verified",
       "scope": "current_archive_analysis"
     }
@@ -343,6 +355,18 @@
     {
       "path": "data/verified/source_manifest.csv",
       "sha256": "051b5588fd53374c032ffc618dd70024f7782896ebe729413030563e1de50a63",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "data/verified/uvit_inclusive_model_curves.csv",
+      "sha256": "507988b6863d06387f157818a33cb38eeb6827b9c61b0c40ca87e08ddce7c495",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "data/verified/uvit_inclusive_wd_best.csv",
+      "sha256": "7f0e97c088e2586b06db096da18eb3ab212eac411c90a7ed54b4b2da2361ad38",
       "status": "verified",
       "scope": "current_archive_analysis"
     },

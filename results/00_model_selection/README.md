@@ -1,8 +1,40 @@
 # 生成模型与checkpoint选择：审阅入口
 
-本轮检查enhancer.pptx第8–15页，重新分析旧版final DDPM与DiT的80份FASTA（80,000条160bp序列），并对历史候选的原始FIMO结果重计数。**现有证据支持DDPM epoch1800作为生成质量主候选，尤其支持其优于PPT中选择的DiT epoch1050；不支持“DDPM所有指标优于所有其他模型”。**
+本轮检查enhancer.pptx第8–15页，重新分析旧版final DDPM与DiT的80份FASTA（80,000条160bp序列），并对历史候选的原始FIMO结果重计数。**修订结论：不能预设DDPM胜出，也不能将epoch1800认定为WD最佳或已确认最终权重。它是本轮6-mer PCC最高的候选；UViT和其他checkpoint在WD指标上更优。**
 
 [Word审阅稿](model_selection_review_zh.docx)已嵌入两张图及中文核验结论。
+
+## 2026-10-08修订：补入UViT并撤回单一最终选择口径
+
+此前只比较历史DDPM/DiT候选，漏了UViT；将最高6-mer PCC用于推荐“最终主权重”的口径过强，现改为按指标列候选，不默认选择DDPM1800。
+
+### 新增图：包含UViT的WD比较
+
+![含UViT比较](../../figures/model_selection/figure_uvit_comparison.png)
+
+[SVG矢量图](../../figures/model_selection/figure_uvit_comparison.svg)。这是JASPAR2024、真实参照343383命中的历史批次；与下方旧final的JASPAR2022比较分开。包括UViT-v1 config1和UViT-v2 config4，180条checkpoint记录，全部来自已追溯CSV。
+
+| 模型 | WD最小epoch | 最小WD |
+|---|---:|---:|
+| UViT-v2 config4 | 1800 | **0.1404** |
+| DDPM-M | 1750 | 0.2815 |
+| UViT-v1 config1 | 1350 | 0.3279 |
+| DiT-M | 900 | 0.3818 |
+| DNA-diffusion | 350 | 0.5491 |
+
+如果该批次以motif位置WD为主指标，排名第一的是UViT-v2 config4，不能写成DDPM最好。各模型训练和采样设置尚未全部统一，因此这是现存指标比较，不是所有条件一致的最终优劣实验。
+
+### 旧版final中1800也不是WD最小
+
+| 模型／epoch | 位置WD | 6-mer PCC | GC均值 |
+|---|---:|---:|---:|
+| DiT 100（本轮DiT WD最小） | **0.2875** | 0.0140 | 70.08% |
+| DDPM 900（本轮DDPM WD最小） | **0.4223** | 0.9261 | 41.13% |
+| DDPM 1800（本轮6-mer PCC最高） | 0.6666 | **0.9724** | 37.53% |
+
+DiT100展示了“位置WD低但序列组成偏离”的实际情况，不能只凭WD认定序列质量最佳；也不能用此例排除其他DiT checkpoint。DDPM1800是多个Pareto候选之一。修订后的checkpoint图加上DiT100，并完整展示其低PCC，未裁掉该点。
+
+历史四模型筛选表中，DiT的JASPAR WD中位数0.8423也低于DDPM的1.0500。上一版TF面板DDPM更低的事实不能覆盖这一结果。
 
 ## 结果图
 
@@ -18,7 +50,7 @@
 
 ![checkpoint比较](../../figures/model_selection/figure_checkpoint_selection.png)
 
-[SVG矢量图](../../figures/model_selection/figure_checkpoint_selection.svg)。每种模型40个checkpoint，每个现存FASTA都是1000条合法160bp序列。A/B分别从原始序列重算6-mer频率PCC和GC分布WD；C为历史JASPAR2022 motif中心位置WD。D–F展示历史候选DDPM1800、DiT1050，以及DDPM900（本轮DDPM位置WD最小）与DDPM2000（10/1引导补验使用）的权衡。蓝色菱形标出DDPM1800。PCC高为好，两个WD低为好；D为点图且明确显示截取的数值轴。
+[SVG矢量图](../../figures/model_selection/figure_checkpoint_selection.svg)。每种模型40个checkpoint，每个现存FASTA都是1000条合法160bp序列。A/B分别从原始序列重算6-mer频率PCC和GC分布WD；C为历史JASPAR2022 motif中心位置WD。D–F展示历史候选DDPM1800、DiT1050，以及DDPM900（本轮DDPM位置WD最小）、DDPM2000（10/1引导补验使用）和DiT100（本轮DiT位置WD最小）的权衡。蓝色菱形标出DDPM1800。PCC高为好，两个WD低为好；D为点图且明确显示截取的数值轴。
 
 | 模型／checkpoint | 6-mer PCC ↑ | GC分布WD ↓ | JASPAR位置WD ↓ |
 |---|---:|---:|---:|
@@ -29,9 +61,9 @@
 
 DDPM1800的6-mer PCC为80个DDPM/DiT现存批次中的最高值；在这三个指标上同时优于历史选定的DiT1050。它是三指标的Pareto非支配候选之一，但不是唯一候选；DiT其他checkpoint也在Pareto集合中。不增加主观加权总分或虚构显著性。
 
-## 推荐权重及结果范围
+## 候选权重及结果范围（尚未最终确定）
 
-**用于生成质量主结果的推荐：**
+**DDPM1800的已定位候选权重：**
 
 `topic_all/topic2_Diffusion/DDPM/final/DDPM/params/epoch_1800_params.pkl`
 
@@ -41,7 +73,7 @@ SHA256：`431b3c843a23a041225cd5be770550b7478494ab830d68f6f5162d683d36d1de`。
 
 10/1classifier-guidance补验用同分支的**epoch2000**（SHA256 `98dec05764d7f7978111e266fe9cded1f49b0c4204477501f320f30f558c9a1f`）。它的结果不能改标为1800。若论文要求无引导与引导全程同一权重，还缺epoch1800的对应引导对照，不能由本次质量比较替代。
 
-当前推荐按“保留序列分布并支持后续计算研究”解释。对UViT-v2/v3没有与本轮同数据、同采样评价的完整对照，不能据此声称DDPM优于UViT；当前另一批次中UViT-v2 config4的WD更低这一事实仍应保留。
+如果作者以6-mer组成接近度为主，DDPM1800值得保留；如果以2024批次的motif位置WD为主，UViT-v2 config4更有依据。两者需要同一数据、采样规模和评价协议的完整多指标对照才能确定主模型；不得用跨批次数字拼总分。UViT-v3尚无对应完整条件比较。
 
 ## PPT核验与更正
 
@@ -79,3 +111,5 @@ python scripts/reanalyse_legacy_candidates.py --source-dir /path/to/private/expo
 python scripts/check_legacy_selection_fimo.py --source-dir /path/to/private/exports
 python figures/plot_model_selection.py
 ```
+
+新增数据：[含UViT曲线180行](../../data/verified/uvit_inclusive_model_curves.csv)、[各模型WD最小记录](../../data/verified/uvit_inclusive_wd_best.csv)。

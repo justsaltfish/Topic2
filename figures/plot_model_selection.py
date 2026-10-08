@@ -29,7 +29,7 @@ def screening():
 def checkpoints():
  rows=read('legacy_full_checkpoint_quality.csv');fig,axs=plt.subplots(2,3,figsize=(9.2,5.6),layout='constrained')
  settings=[('sixmer_pcc','6-mer frequency PCC','Higher is better'),('gc_wasserstein','GC-distribution WD','Lower is better'),('jaspar_position_wd','JASPAR motif-position WD (bp)','Lower is better')]
- selected=[('DDPM',900),('DDPM',1800),('DDPM',2000),('DiT',1050)];labels=['DDPM 900','DDPM 1800','DDPM 2000','DiT 1050']
+ selected=[('DDPM',900),('DDPM',1800),('DDPM',2000),('DiT',1050),('DiT',100)];labels=['DDPM 900','DDPM 1800','DDPM 2000','DiT 1050','DiT 100']
  for col,(key,label,goal) in enumerate(settings):
   ax=axs[0,col]
   for model in ['DDPM','DiT']:
@@ -47,9 +47,26 @@ def checkpoints():
    rr=next(r for r in rows if r['model']==model and int(r['epoch'])==epoch);value=float(rr[key]);vals.append(value)
    bottom.scatter(value,index,s=36,color=COLORS[model],marker='D' if epoch==1800 else 'o',zorder=3)
    bottom.annotate(f'{value:.4f}',(value,index),xytext=(5,0),textcoords='offset points',va='center',fontsize=7)
-  bottom.set_yticks(range(4),labels);bottom.invert_yaxis();bottom.set_xlabel(label);bottom.set_title(f'{chr(68+col)}  Candidate checkpoints',loc='left',fontweight='bold');bottom.grid(axis='x',alpha=.18)
-  if key=='sixmer_pcc':bottom.set_xlim(.90,1.01)
+  bottom.set_yticks(range(len(labels)),labels);bottom.invert_yaxis();bottom.set_xlabel(label);bottom.set_title(f'{chr(68+col)}  Candidate checkpoints',loc='left',fontweight='bold');bottom.grid(axis='x',alpha=.18)
+  if key=='sixmer_pcc':bottom.set_xlim(0,1.1)
   else:bottom.set_xlim(0,max(vals)*1.25)
  fig.suptitle('DDPM and DiT checkpoint comparison | 1,000 sequences per checkpoint',fontsize=11,fontweight='bold')
  save(fig,'figure_checkpoint_selection')
-if __name__=='__main__':screening();checkpoints();print('Saved two figures, PNG 450 DPI + SVG')
+
+def uvit_comparison():
+ rows=read('uvit_inclusive_model_curves.csv');best=read('uvit_inclusive_wd_best.csv')
+ colors={'DDPM-M':'#0077BB','DiT-M':'#EE7733','UViT-v1 config1':'#009988','UViT-v2 config4':'#AA4499','DNA-diffusion':'#CC3311'}
+ fig,axs=plt.subplots(1,2,figsize=(9.2,3.8),layout='constrained')
+ for model,color in colors.items():
+  rr=sorted([r for r in rows if r['model']==model],key=lambda r:int(r['epoch']))
+  axs[0].plot([int(r['epoch']) for r in rr],[float(r['wasserstein']) for r in rr],lw=1.1,color=color,label=model)
+ axs[0].set_title('A  Historical checkpoint curves',loc='left',fontweight='bold');axs[0].set_xlabel('Training epoch');axs[0].set_ylabel('JASPAR motif-position WD (bp)');axs[0].set_ylim(bottom=0);axs[0].grid(alpha=.18);axs[0].legend(fontsize=7)
+ best.sort(key=lambda r:float(r['jaspar_position_wd']))
+ for index,r in enumerate(best):
+  v=float(r['jaspar_position_wd']);axs[1].scatter(v,index,color=colors[r['model']],s=45)
+  axs[1].annotate(f"{v:.4f} | epoch {r['epoch']}",(v,index),xytext=(7,0),textcoords='offset points',va='center',fontsize=8)
+ axs[1].set_yticks(range(len(best)),[r['model'] for r in best]);axs[1].invert_yaxis();axs[1].set_xlim(0,.90);axs[1].set_xlabel('Minimum motif-position WD (lower is better)');axs[1].set_title('B  Best recorded WD per model',loc='left',fontweight='bold');axs[1].grid(axis='x',alpha=.18)
+ fig.suptitle('UViT-inclusive comparison | JASPAR2024 historical batch',fontweight='bold',fontsize=11)
+ save(fig,'figure_uvit_comparison')
+
+if __name__=='__main__':screening();checkpoints();uvit_comparison();print('Saved three figures, PNG 450 DPI + SVG')
