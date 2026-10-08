@@ -18,9 +18,11 @@ for row in rows:
  assert sum(scan['position_counts'])==scan['hits_in_selected_records'] and sum(scan['motif_counts'].values())==scan['hits_in_selected_records']
  row['jaspar2024_position_wd']=float(wasserstein_distance(range(160),range(160),ref['position_counts'],scan['position_counts']))
  row['jaspar2024_hits']=scan['hits_in_selected_records'];row['jaspar2024_categories']=scan['num_categories'];row['jaspar2024_hits_per_sequence']=scan['hits_in_selected_records']/1000
+ row['real_jaspar2024_hits_per_sequence']=ref['hits_in_selected_records']/ref['n_selected']
+ row['motif_hit_density_abs_deviation']=abs(row['jaspar2024_hits_per_sequence']-row['real_jaspar2024_hits_per_sequence'])
  row['comparison_status']='same_reference_sample_size_database_and_scan_parameters;historical_generated_batches'
 # Protocol hashes preserve the precise scan and sampling state.
-protocol=json.loads((repo/'data/verified/unified_quality_protocol.json').read_text());protocol.update(fimo=env,motif_position='floor((start+stop)/2), positions0..159, observed hit weights only; no positional pseudocount',fimo_real_fasta_source=ref['source_relative_path'],fimo_real_fasta_sha256=ref['source_sha256'],new_analysis=True,new_training_or_generation=False,server_files_written=False)
+protocol=json.loads((repo/'data/verified/unified_quality_protocol.json').read_text());protocol.update(fimo=env,motif_position='floor((start+stop)/2), positions0..159, observed hit weights only; no positional pseudocount',fimo_real_fasta_source=ref['source_relative_path'],fimo_real_fasta_sha256=ref['source_sha256'],motif_quantity='FIMO hit records per sequence; absolute deviation from real-reference hit density; not a maximize objective',new_analysis=True,new_training_or_generation=False,server_files_written=False)
 (repo/'data/verified/unified_quality_protocol.json').write_text(json.dumps(protocol,indent=2)+'\n')
 with (repo/'data/verified/unified_quality_comparison.csv').open('w',newline='') as f:
  w=csv.DictWriter(f,fieldnames=list(rows[0]),lineterminator='\n');w.writeheader();w.writerows(rows)

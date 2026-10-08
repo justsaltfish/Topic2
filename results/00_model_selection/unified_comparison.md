@@ -1,14 +1,32 @@
 # 同一评价协议下的DDPM、DiT、UViT比较
 
-日期：2026-10-08。用户确认制作统一三面板图后，读取40份UViT-v2 config4既有生成FASTA，并与旧版final DDPM/DiT各40份既有FASTA比较；本次没有训练或重新生成序列。对选出的7个候选执行了新的CPU FIMO扫描，全部`--text`输出，不写服务器文件、不使用GPU或提交SLURM。
+日期：2026-10-08。用户确认制作统一比较图后，读取40份UViT-v2 config4既有生成FASTA，并与旧版final DDPM/DiT各40份既有FASTA比较；本次没有训练或重新生成序列。对选出的7个候选执行了新的CPU FIMO扫描，全部`--text`输出，不写服务器文件、不使用GPU或提交SLURM。
 
 [Word审阅稿](unified_quality_review_zh.docx)嵌入主图与中文核验结论。
+
+## 数量指标与选型口径修订
+
+motif数量已补入第四面板：每条序列FIMO命中数，参照是38.2948097463次/序列。所有生成候选1000条，直接除以1000；真实参照11984条，以总命中458925除以11984。数量目标是接近真实水平，不是最大化。
+
+| 候选 | 命中总数（1000条） | 次/序列 | 与真实参照绝对差 |
+|---|---:|---:|---:|
+| DDPM 1800 | 33404 | 33.404 | 4.891 |
+| DiT 1200 | 31601 | 31.601 | 6.694 |
+| **DiT 1050** | **36896** | **36.896** | **1.399** |
+| UViT-v2 config4 1900 | 30287 | 30.287 | 8.008 |
+| UViT-v2 config4 1800 | 31472 | 31.472 | 6.823 |
+
+加入数量后，DiT1050最接近真实命中密度（限本次7候选）；它在6-mer/GC/位置WD上弱于DDPM1800，但不能因它不是6-mer最佳而忽略。主图现同时保留DiT1050，以完整展示此权衡。
+
+**选择规则的结论：**按各模型6-mer最大筛候选，适合以组成保真度为关注点的初筛；未预先冻结主指标/门槛，且未对全部120个checkpoint重算同协议的motif数量和位置WD，因此不能视为最终综合选型。事后挑选6-mer最优点，再用其他指标证明某模型最优，会偏向最初指标。当前应称为“候选批次比较”，保留各指标的优势候选，避免自行制定加权总分。
+
+最终研究主线需要先确认主指标、最低序列质量门槛及如何处理指标冲突，再对同等范围的批次作联合评价。motif类别数、各motif频率与重复/低复杂度也需要保留检查，数量接近不等于组成或生物学功能正确。
 
 ## 主图
 
 ![统一质量比较](../../figures/model_selection/figure_unified_quality_comparison.png)
 
-[SVG矢量图](../../figures/model_selection/figure_unified_quality_comparison.svg)；[完整7候选图](../../figures/model_selection/figure_unified_quality_all_candidates.png)。主图先展示各40-checkpoint扫描中的6-mer最佳批次，再保留原先UViT-v2 config4的WD最佳候选1800。没有只选较弱的历史DiT1050作为对照。
+[SVG矢量图](../../figures/model_selection/figure_unified_quality_comparison.svg)；[完整7候选图](../../figures/model_selection/figure_unified_quality_all_candidates.png)。主图先展示各40-checkpoint扫描中的6-mer最佳批次，再保留历史DiT1050以及原先UViT-v2 config4的WD候选1800。没有只选较弱的历史DiT1050作为对照。
 
 | 候选 | 6-mer PCC ↑ | GC分布WD ↓ | 新JASPAR2024位置WD（bp）↓ |
 |---|---:|---:|---:|
@@ -29,7 +47,7 @@
 
 > 在统一序列长度、生成样本数量、真实参照及motif扫描协议后，DDPM epoch1800与DiT epoch1200表现出接近的6-mer频率相关性（0.9724与0.9723），但DDPM的motif位置分布Wasserstein距离更低（0.6025与1.4909）。与本轮UViT-v2 config4候选相比，DDPM在6-mer组成及GC分布上更接近真实参照，而UViT具有更低的位置分布距离。综合上述权衡，DDPM可作为兼顾序列组成与调控模式位置保真度的后续研究基础模型。
 
-这是可供作者选择研究主线的结果措辞，最终主指标和权重尚未在本次自动冻结。10/1引导实验仍是DDPM2000，不能改标为1800。
+以上三项指标措辞不包含数量优势；加入数量后必须同时报告DiT1050更接近真实命中密度的结果，不能仅用三项指标得出综合最优结论。最终主指标和权重尚未在本次自动冻结。10/1引导实验仍是DDPM2000，不能改标为1800。
 
 ## 新评价口径
 

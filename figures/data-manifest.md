@@ -33,3 +33,5 @@
 | All candidates | 同上 | 包含全部7候选，保持旧候选的对照 | 同上 --all-candidates | figures/model_selection/figure_unified_quality_all_candidates.png / .svg |
 
 旧版模型选择图未重新运行FIMO；本次用户确认后实际执行CPU --text扫描，未写服务器文件。新图参考和数据库统一，位置WD不加位置伪计数，与旧图数值不可直接混用。
+
+统一图第四面板追加motif命中密度，使用已有同协议扫描的hits/n及其与真实38.2948097463的差，不需要新扫描。候选比较包含DiT1050的数量优势。

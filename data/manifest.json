@@ -105,25 +105,25 @@
     },
     {
       "path": "figures/model_selection/figure_unified_quality_all_candidates.png",
-      "sha256": "033d27e1a5e02525488151b8272271488e17da66a2756aeecdc695968ff7e396",
+      "sha256": "cc8c206c806654ca038b838a6eeb5eacc90539bb7f79d7c6cbe75ce7bc8e1a3d",
       "status": "verified",
       "scope": "current_archive_analysis"
     },
     {
       "path": "figures/model_selection/figure_unified_quality_all_candidates.svg",
-      "sha256": "400f5e8bdc94b5feb6623eb63e04d13564f5c0c827271b5bce26b3c3aa2f276c",
+      "sha256": "e3fea24be5496aaccaa482ecd8b03147a7a7396f3b24534e8bf8490d33dc01e0",
       "status": "verified",
       "scope": "current_archive_analysis"
     },
     {
       "path": "figures/model_selection/figure_unified_quality_comparison.png",
-      "sha256": "667266ae47cae8d1094535a99ce7eef8784a3706249b7d0c3acc251f5cdbd3a4",
+      "sha256": "edf1c13b2a66179be76e3a8665e9c379acfdbbf23032c13c1b87a58c7a9f4c84",
       "status": "verified",
       "scope": "current_archive_analysis"
     },
     {
       "path": "figures/model_selection/figure_unified_quality_comparison.svg",
-      "sha256": "a7462438e62f926aefddadf52e814a2d32cdb2d54883562a89688653dffe15c7",
+      "sha256": "e7a8977f78bf61d9cf35968553bae1781c031f62ad86d171b293ded511914a5c",
       "status": "verified",
       "scope": "current_archive_analysis"
     },
@@ -390,7 +390,7 @@
     },
     {
       "path": "data/verified/unified_quality_comparison.csv",
-      "sha256": "2890248006d985cad5a5872e9f8eebb148c6139c5cc7f1ea95894c902cf05300",
+      "sha256": "5673b107c5409b62bb578138bbda5a557ae0994921e0b45fc648163e77ae6d57",
       "status": "verified",
       "scope": "current_archive_analysis"
     },
@@ -468,7 +468,7 @@
     },
     {
       "path": "data/verified/unified_quality_protocol.json",
-      "sha256": "94f4de3cb72a8359b38efafee7cd84dae9a34e901cc08b3e98708319f4adeac3",
+      "sha256": "a2f9a9592982331f728db6222270f5aaccad633983a14d6dc499c1f4d243e994",
       "status": "verified",
       "scope": "current_archive_analysis"
     },

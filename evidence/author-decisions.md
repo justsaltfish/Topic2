@@ -17,3 +17,5 @@
 修订：上一项DDPM1800推荐仅来自历史候选比较，遗漏了UViT。已补入2024批次，WD最佳是UViT-v2 config4 epoch1800；旧final DiT100位置WD低于DDPM900，DDPM1800也不是WD最小。因此撤回“单一最终模型”口径：主指标与最低质量门槛未冻结，最终模型及checkpoint仍待确认。
 
 统一评价追加：候选均1000条、同NG参照、同JASPAR2024新扫描。DDPM1800与DiT1200的6-mer接近，但前者motif位置WD更低；UViT-v2 cfg4候选motif位置WD更低而6-mer/GC偏差更大。因此DDPM可作为综合序列质量的研究基础候选，但不等于所有指标获胜。最终主指标、权重和独立验证仍待作者确定。见results/00_model_selection/unified_comparison.md。
+
+数量指标追加：真实参照38.295次motif命中/序列，DiT1050为36.896、DDPM1800为33.404，前者数量更接近真实。已补第四面板并保留DiT1050。按每家族6-mer最高选择候选仅是初筛；120批次未完成同协议四指标联合扫描，不能作为最终综合最优结论。

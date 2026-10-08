@@ -2,7 +2,7 @@
 
 ## 最新统一评价图
 
-[DDPM、DiT、UViT同协议三面板图与结果](unified_comparison.md)：所有候选1000条，统一NG参照和JASPAR2024新扫描。DDPM/DiT的6-mer最佳批次接近；DDPM motif位置WD更低，DiT GC略低。UViT位置WD更低，但其6-mer和GC偏差更大。下文为此前历史批次比较，不能与新图混用数值。
+[DDPM、DiT、UViT同协议四面板图与结果](unified_comparison.md)：所有候选1000条，统一NG参照和JASPAR2024新扫描。DDPM/DiT的6-mer最佳批次接近；DDPM motif位置WD更低，DiT GC略低。UViT位置WD更低，但其6-mer和GC偏差更大。新增motif命中密度面板：DiT1050更接近真实数量水平；6-mer初筛不能当作最终综合选择。下文为此前历史批次比较，不能与新图混用数值。
 
 本轮检查enhancer.pptx第8–15页，重新分析旧版final DDPM与DiT的80份FASTA（80,000条160bp序列），并对历史候选的原始FIMO结果重计数。**修订结论：不能预设DDPM胜出，也不能将epoch1800认定为WD最佳或已确认最终权重。它是本轮6-mer PCC最高的候选；UViT和其他checkpoint在WD指标上更优。**
 

@@ -30,5 +30,6 @@
   "fimo_real_fasta_sha256": "8f8a0a6cbaeba06ec6dab1f97c5dde6580bd383254f2f9ad52e130c6e3569311",
   "new_analysis": true,
   "new_training_or_generation": false,
-  "server_files_written": false
+  "server_files_written": false,
+  "motif_quantity": "FIMO hit records per sequence; absolute deviation from real-reference hit density; not a maximize objective"
 }
