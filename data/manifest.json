@@ -221,6 +221,18 @@
       "scope": "current_archive_analysis"
     },
     {
+      "path": "data/verified/predictor_test_membership.csv",
+      "sha256": "8ea3812902373c7347f263eda7b69a1efddcede15a65c23c3effce0fad574e7f",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
+      "path": "data/verified/predictor_test_recheck.csv",
+      "sha256": "77ca84948a7f3fb90162cc582b8c7b6a28f9a1563743ea739d3a21dc13e20999",
+      "status": "verified",
+      "scope": "current_archive_analysis"
+    },
+    {
       "path": "data/verified/predictor_training_audit.csv",
       "sha256": "b0d2ea3e080e766963084f27c29b2ced2ac1f62399f05cab87917ae9f4c60815",
       "status": "verified",

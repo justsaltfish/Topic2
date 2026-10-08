@@ -1,0 +1,16 @@
+{
+  "kind": "environment",
+  "torch": "1.11.0",
+  "numpy": "1.21.5",
+  "pandas": "1.4.4",
+  "python": "3.8.13",
+  "device": "cpu",
+  "model_source_sha256": "86b8e5760a6afd4cfc2eee38dd1125fbf71acd84a0932ec939a975b622ddf8cb",
+  "dataset_sha256": "f1bd56a88d5f8d1baabcb29e855a8c11f404dcf5aacc1b184c024287fccd8f49",
+  "recheck_date": "2026-10-08",
+  "historical_test_indices_archived": false,
+  "n_models": 7,
+  "n_test_observations": 8387,
+  "ara_up_status": "pending_author_confirmation_of_reconstructed_split",
+  "export_note": "Individual scores and labels are kept in local private export; public membership table contains row indices and sequence hashes only."
+}
